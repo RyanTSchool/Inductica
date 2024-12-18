@@ -18,7 +18,7 @@
             background: linear-gradient(135deg, #4CAF50 0%, #38a169 30%, #2a9d8f 60%, #3498db 100%);
             color: white;
             text-align: center;
-            height: 250px; /* Reduced header height */
+            height: 250px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -28,24 +28,26 @@
         /* Navigation Bar */
         nav {
             position: absolute;
-            top: 10px;
-            left: 50%;
-            transform: translateX(-50%);
+            top: 0;
+            width: 100%;
             display: flex;
             align-items: center;
-            gap: 30px;
+            justify-content: space-between;
+            padding: 10px 50px;
+            box-sizing: border-box;
         }
 
         nav .logo img {
-            width: 60px; /* Smaller Logo */
+            width: 80px; /* Larger logo */
             height: auto;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            font-size: 1.2em;
+            font-size: 1.5em; /* Larger navigation text */
             font-weight: bold;
+            margin: 0 15px;
         }
 
         nav a:hover {
@@ -54,15 +56,13 @@
 
         /* Header Content */
         header h1 {
-            font-size: 2em;
-            margin: 0;
-            margin-bottom: 10px; /* Increased bottom margin */
+            font-size: 2.5em;
+            margin: 20px 0;
         }
 
         header p {
-            font-size: 1.1em;
+            font-size: 1.3em;
             margin: 0;
-            margin-top: 10px; /* Increased top margin */
         }
 
         /* Section Styles */
