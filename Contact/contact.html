@@ -12,47 +12,83 @@
             color: #333;
             background-color: #fff;
         }
+        header {
+            background: linear-gradient(135deg, #4CAF50, #2a9d8f);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        header p {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
         .section-light {
             background-color: #f9f9f9;
             padding: 50px 20px;
-        }
-        .section-tan {
-            background-color: #f0e8da;
-            height: 300px; /* Blank Tan Section */
         }
         .section {
             max-width: 1000px;
             margin: 0 auto;
             display: flex;
-            gap: 40px;
-            justify-content: space-between;
             align-items: flex-start;
-            flex-wrap: wrap;
+            gap: 40px;
+            flex-wrap: nowrap;
+        }
+        .section img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
         }
         .section-text {
             flex: 1;
+            text-align: left;
         }
-        .section-text p, .section-text ul {
+        .section-text p {
             font-size: 1.2em;
             line-height: 1.6;
+        }
+        h2.section-title {
+            color: #3498db;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        h3.section-subtitle {
+            color: #4CAF50;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .list-section {
+            flex: 1;
+        }
+        .list-section ul {
+            list-style: none;
+            padding: 0;
+            font-size: 1.2em;
+        }
+        .list-section ul li {
+            margin-bottom: 10px;
         }
         .client-image {
             flex: 1;
             max-width: 500px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
-        h2.section-title, h3.section-subtitle {
-            color: #4CAF50;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        ul li {
-            margin-bottom: 10px;
         }
         footer {
             background-color: #4CAF50;
@@ -66,12 +102,33 @@
     </style>
 </head>
 <body>
-    <!-- White Section: About Tutoring -->
+    <!-- Header Section -->
+    <header>
+        <h1>About Tutoring</h1>
+        <p>I help students achieve excellence in advanced math and physics topics.</p>
+    </header>
+
+    <!-- About Tutoring Section -->
     <div class="section-light">
-        <h2 class="section-title">List of Subjects Covered</h2>
+        <div class="section">
+            <!-- Tutor's Picture -->
+            <img src="tutoringjames.jpg" alt="James Picture">
+            <!-- Tutor Information -->
+            <div class="section-text">
+                <p>
+                    I tutor upper-level undergraduate math and physics subjects both online and in person at a rate of <strong>$60/hr</strong>. Visit my tutoring profile to see reviews from happy customers from my 16 years of tutoring experience.
+                </p>
+                <a href="#" class="cta-button">Tutor Profile</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Subjects and Client Experience -->
+    <div class="section-light">
         <div class="section">
             <!-- List of Subjects -->
-            <div class="section-text">
+            <div class="list-section">
+                <h3 class="section-subtitle">List of Subjects Covered</h3>
                 <ul>
                     <li>1. Calculus 3</li>
                     <li>2. Electricity and Magnetism</li>
@@ -83,15 +140,12 @@
                     <li>8. Quantum Mechanics</li>
                 </ul>
             </div>
-            <!-- Client Picture -->
+            <!-- Client Experience Image -->
             <img src="tutoringclient.png" alt="Client Picture" class="client-image">
         </div>
     </div>
 
-    <!-- Blank Tan Section -->
-    <div class="section-tan"></div>
-
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer>
         <div class="footer-logo">
             <img src="../general/Logo-Transparent.png" alt="Inductica Logo">
