@@ -56,11 +56,24 @@
             background-color: #fff;
             padding: 30px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
         .section-title {
             text-align: center;
             color: #4CAF50;
             margin-bottom: 20px;
+        }
+        .mission-title {
+            color: #1E90FF;
+            font-size: 2em;
+            text-align: center;
+        }
+        .mission-text {
+            font-size: 1.2em;
+            color: #333;
+            text-align: justify;
         }
         img {
             width: 100%;
@@ -102,10 +115,12 @@
     <!-- Mission Statement -->
     <div class="section-tan">
         <section>
-            <h2 class="section-title">Mission Statement</h2>
-            <img src="Welcome/sceinceimage-1.jpg" alt="Science Image">
-            <p>The theories of Quantum Mechanics and General Relativity are flawed and are hindering progress toward new fundamental discoveries in physics. In order to replace these theories, we must go back to the observations and reinterpret them. However, in an extremely advanced science like physics, observations can only be interpreted using earlier established theories. As a result, though many scientists agree that modern theories need to be corrected, none of them have been able to return to the observations and look at them with a perspective which is not colored by aspects of existing flawed theories.</p>
-            <img src="https://via.placeholder.com/600x300" alt="Placeholder for new image">
+            <h2 class="mission-title">Mission Statement</h2>
+            <div style="display: flex; align-items: center; gap: 20px;">
+                <img src="Welcome/sceinceimage-1.jpg" alt="Science Image" style="width: 40%;">
+                <p class="mission-text">The theories of Quantum Mechanics and General Relativity are flawed and are hindering progress toward new fundamental discoveries in physics. In order to replace these theories, we must go back to the observations and reinterpret them. However, in an extremely advanced science like physics, observations can only be interpreted using earlier established theories. As a result, though many scientists agree that modern theories need to be corrected, none of them have been able to return to the observations and look at them with a perspective which is not colored by aspects of existing flawed theories.</p>
+            </div>
+            <img src="Welcome/Screenshot%20from%202024-12-17%2018-08-56.png" alt="Project Image" style="width: 60%; margin: 0 auto; display: block;">
         </section>
     </div>
 
@@ -119,36 +134,6 @@
                 <li>Use this theory to overcome current physical conflicts and broaden understanding.</li>
                 <li>Accelerate modern physics exploration through systematic thinking.</li>
             </ul>
-        </section>
-    </div>
-
-    <!-- YouTube Section -->
-    <div class="section-tan">
-        <section>
-            <h2 class="section-title">Watch on YouTube!</h2>
-            <img src="https://via.placeholder.com/600x300" alt="YouTube Thumbnail">
-            <p>Subscribe to our YouTube channel to explore more about the Inductica Physics Project.</p>
-            <a href="#" class="cta-button">See More</a>
-        </section>
-    </div>
-
-    <!-- Blog Section -->
-    <div class="section-light">
-        <section>
-            <h2 class="section-title">Read More</h2>
-            <img src="https://via.placeholder.com/600x300" alt="Blog Image">
-            <p>Visit our blog to stay updated on our latest written content!</p>
-            <a href="#" class="cta-button">Blog</a>
-        </section>
-    </div>
-
-    <!-- Patreon Section -->
-    <div class="section-tan">
-        <section>
-            <h2 class="section-title">Become a Patron!</h2>
-            <img src="https://via.placeholder.com/600x300" alt="Patreon Logo">
-            <p>Support Inductica on Patreon! Members will receive exclusive access to extra content.</p>
-            <a href="#" class="cta-button">Patreon</a>
         </section>
     </div>
 
