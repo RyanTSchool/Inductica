@@ -12,45 +12,44 @@
             color: #333;
             background-color: #fff;
         }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, #4CAF50 0%, #38a169 30%, #2a9d8f 60%, #3498db 100%);
+            color: white;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+
         /* Navigation Bar */
         nav {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            background: linear-gradient(135deg, #4CAF50, #2a9d8f);
-            padding: 10px 20px;
+            gap: 50px;
         }
-        nav .logo img {
-            width: 60px;
+        nav img {
+            width: 100px;
             height: auto;
         }
-        nav .nav-links {
-            display: flex;
-            gap: 20px;
-        }
-        nav .nav-links a {
+        nav a {
             color: white;
             text-decoration: none;
-            font-size: 1.2em;
+            font-size: 1.5em;
             font-weight: bold;
         }
-        nav .nav-links a:hover {
+        nav a:hover {
             text-decoration: underline;
         }
-        header {
-            text-align: center;
-            padding: 50px 20px;
-            background: linear-gradient(135deg, #4CAF50, #2a9d8f);
-            color: white;
-        }
-        header h1 {
-            font-size: 2.5em;
-            margin: 0;
-        }
-        header p {
-            margin: 10px 0;
-            font-size: 1.2em;
-        }
+
+        /* Section Styles */
         .section-light {
             background-color: #f9f9f9;
             padding: 50px 20px;
@@ -77,6 +76,7 @@
             font-size: 1.2em;
             line-height: 1.6;
         }
+
         h2.section-title, h3.section-subtitle {
             color: #4CAF50;
             text-align: center;
@@ -92,19 +92,14 @@
         .list-section ul li {
             margin-bottom: 10px;
         }
-        .client-image {
-            display: block;
-            margin: 20px auto;
-            width: 400px;
-            height: auto;
-            border-radius: 50%;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
-        /* Large Tan Placeholder */
+
+        /* Placeholder Tan Section */
         .section-placeholder {
             background-color: #f0e8da;
             height: 400px;
         }
+
+        /* Footer */
         footer {
             background-color: #4CAF50;
             color: white;
@@ -117,22 +112,27 @@
     </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav>
-        <div class="logo">
-            <img src="../general/Logo-Transparent.png" alt="Inductica Logo">
-        </div>
-        <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="contact.html">Contact</a>
-            <a href="#">Blog</a>
-        </div>
-    </nav>
 
-    <!-- Header Section -->
+    <!-- Header -->
     <header>
-        <h1>About Tutoring</h1>
-        <p>I help students achieve excellence in advanced math and physics topics.</p>
+        <!-- Top Navigation Bar -->
+        <nav>
+            <!-- Logo -->
+            <a href="index.html">
+                <img src="general/Logo-Transparent.png" alt="Inductica Logo">
+            </a>
+            <!-- Navigation Links -->
+            <div>
+                <a href="#">Home</a>
+                <a href="Contact/contact.html">Contact</a>
+                <a href="#blog">Blog</a>
+            </div>
+        </nav>
+        <!-- Centered Header Content -->
+        <div>
+            <h1>About Tutoring</h1>
+            <p style="font-size: 1.5em;">I help students achieve excellence in advanced math and physics topics.</p>
+        </div>
     </header>
 
     <!-- About Tutoring Section -->
@@ -146,12 +146,12 @@
                 <p>
                     I tutor upper-level undergraduate math and physics subjects both online and in person at a rate of <strong>$60/hr</strong>. Visit my tutoring profile to see reviews from happy customers from my 16 years of tutoring experience.
                 </p>
-                <a href="#" class="cta-button" style="display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px;">Tutor Profile</a>
+                <a href="#" style="display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px;">Tutor Profile</a>
             </div>
         </div>
     </div>
 
-    <!-- List of Subjects Covered Section -->
+    <!-- Subjects and Client Experience Section -->
     <div class="section-light">
         <h3 class="section-subtitle">List of Subjects Covered</h3>
         <div class="section">
@@ -168,20 +168,21 @@
                     <li>8. Quantum Mechanics</li>
                 </ul>
             </div>
-            <!-- Client Experience Image -->
-            <img src="tutoringclient.png" alt="Client Picture" class="client-image">
+            <!-- Client Image -->
+            <img src="tutoringclient.png" alt="Client Picture" style="border-radius: 50%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);">
         </div>
     </div>
 
     <!-- Large Tan Placeholder Section -->
     <div class="section-placeholder"></div>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
         <div class="footer-logo">
-            <img src="../general/Logo-Transparent.png" alt="Inductica Logo">
+            <img src="general/Logo-Transparent.png" alt="Inductica Logo">
         </div>
         <p>&copy; 2024 Inductica. All Rights Reserved.</p>
     </footer>
+
 </body>
 </html>
