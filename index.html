@@ -49,35 +49,44 @@
         .section-tan {
             background-color: #f0e8da;
         }
-        section {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 20px;
-            max-width: 1000px;
+        .mission-container {
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
+            background-color: white;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .section-title, .mission-title {
+            padding: 20px;
             text-align: center;
+        }
+        .mission-container h2 {
             color: #1E90FF;
-            font-size: 2.2em;
+            font-size: 2.5em;
             margin-bottom: 20px;
         }
-        .mission-text {
+        .section-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        .section-box {
             flex: 1;
-            font-size: 1.1em;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .section-box h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #1E90FF;
+            text-align: left;
+        }
+        .section-box p, ul {
             text-align: justify;
             line-height: 1.6;
         }
-        img {
-            width: 45%;
+        .section-box img {
+            width: 100%;
             height: auto;
-        }
-        ul {
-            padding-left: 20px;
         }
         footer {
             background-color: #4CAF50;
@@ -104,33 +113,25 @@
 
     <!-- Mission Statement -->
     <div class="section-tan">
-        <section>
-            <img src="Welcome/sceinceimage-1.jpg" alt="Science Image">
-            <div>
-                <h2 class="mission-title">Mission Statement</h2>
-                <p class="mission-text">The theories of Quantum Mechanics and General Relativity are flawed and are hindering progress toward new fundamental discoveries in physics. In order to replace these theories, we must go back to the observations and reinterpret them. However, in an extremely advanced science like physics, observations can only be interpreted using earlier established theories. As a result, though many scientists agree that modern theories need to be corrected, none of them have been able to return to the observations and look at them with a perspective which is not colored by aspects of existing flawed theories.</p>
+        <div class="mission-container">
+            <h2>Mission Statement</h2>
+            <div class="section-container">
+                <div class="section-box">
+                    <h3>Quantum Mechanics and General Relativity</h3>
+                    <img src="Welcome/sceinceimage-1.jpg" alt="Science Image">
+                    <p>The theories of Quantum Mechanics and General Relativity are flawed and are hindering progress toward new fundamental discoveries in physics. In order to replace these theories, we must go back to the observations and reinterpret them. However, in an extremely advanced science like physics, observations can only be interpreted using earlier established theories. As a result, though many scientists agree that modern theories need to be corrected, none of them have been able to return to the observations and look at them with a perspective which is not colored by aspects of existing flawed theories.</p>
+                </div>
+                <div class="section-box">
+                    <h3>The Inductive Physics Project will overcome these challenges in three phases</h3>
+                    <img src="Welcome/Screenshot%20from%202024-12-17%2018-08-56.png" alt="Project Image">
+                    <ul>
+                        <li>Write a theory of induction: a systematic process for proving scientific conclusions from observation.</li>
+                        <li>Use that theory to reprove the essential principles of known physics from observation. This will allow us to approach quantum and relativistic phenomena only using prior theories which can be known with certainty.</li>
+                        <li>Armed with a clear background knowledge free of faulty assumptions, the Inductive Physics Project will develop new theories explaining quantum and relativistic phenomena.</li>
+                    </ul>
+                </div>
             </div>
-        </section>
-        <section>
-            <div>
-                <img src="Welcome/Screenshot%20from%202024-12-17%2018-08-56.png" alt="Project Image">
-            </div>
-        </section>
-    </div>
-
-    <!-- Project Phases -->
-    <div class="section-light">
-        <section>
-            <div>
-                <h2 class="section-title">The Inductica Physics Project</h2>
-                <ul>
-                    <li>Write a theory of induction as a systematic process for deriving scientific laws.</li>
-                    <li>Use this theory to overcome current physical conflicts and broaden understanding.</li>
-                    <li>Accelerate modern physics exploration through systematic thinking.</li>
-                </ul>
-            </div>
-            <img src="https://via.placeholder.com/600x300" alt="Placeholder">
-        </section>
+        </div>
     </div>
 
     <!-- Footer -->
