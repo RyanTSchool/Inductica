@@ -9,150 +9,105 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f1eb; /* Updated to a darker tan */
             color: #333;
         }
         header {
-            background: linear-gradient(135deg, #4CAF50 0%, #38a169 30%, #2a9d8f 60%, #3498db 100%);
-            color: white;
             text-align: center;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            padding: 20px;
+            background-color: #f4f1eb;
         }
         header h1 {
+            color: #0074cc;
+            font-size: 2.5em;
             margin: 0;
-            font-size: 3em;
-        }
-        header p {
-            font-style: italic;
-            margin: 10px 0;
-        }
-        .icons {
-            margin-top: 10px;
-        }
-        .icons a {
-            color: white;
-            text-decoration: none;
-            margin: 0 5px;
-            font-size: 1.5em;
-        }
-        .section-tan {
-            background-color: #f0e8da;
-            padding: 50px 20px;
+            text-transform: uppercase;
         }
         .mission-container {
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: space-between;
-            align-items: stretch;
-            gap: 20px;
             max-width: 1200px;
-            margin: 0 auto;
-        }
-        .section-box {
-            background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            flex: 1;
+            margin: 20px auto;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            box-sizing: border-box;
+            gap: 40px;
+            padding: 20px;
         }
-        .section-box h3 {
-            font-size: 1.5em;
-            color: #1E90FF;
-            text-align: center;
+        .mission-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            flex-wrap: wrap;
         }
-        .section-box p, .section-box ul {
-            text-align: justify;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-        .section-box img {
-            width: 100%;
+        .mission-section img {
+            width: 300px;
             height: auto;
+            object-fit: cover;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .mission-text {
+            flex: 1;
+            text-align: justify;
+        }
+        .mission-text h2 {
+            color: #333;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        .mission-text h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .mission-text p, .mission-text ul {
+            line-height: 1.6;
             margin-bottom: 15px;
         }
-        .embed-container {
-            background-color: #fff;
-            padding: 50px 20px;
-            text-align: center;
-        }
-        iframe {
-            width: 100%;
-            max-width: 560px;
-            height: 315px;
-            border: none;
+        ul {
+            padding-left: 20px;
         }
         footer {
+            text-align: center;
+            padding: 10px 0;
             background-color: #4CAF50;
             color: white;
-            text-align: center;
-            padding: 1em 0;
-        }
-        .footer-logo img {
-            max-width: 200px;
         }
     </style>
 </head>
 <body>
+
     <!-- Header -->
     <header>
-        <h1>Inductica</h1>
-        <p>"To stand on the shoulders of giants, you must make the climb, earning every handhold yourself."</p>
-        <div class="icons">
-            <a href="#">&#9733;</a>
-            <a href="#">&#9733;</a>
-            <a href="#">&#9733;</a>
-        </div>
+        <h1>Mission Statement</h1>
     </header>
 
-    <!-- Mission Statement -->
-    <div class="section-tan">
-        <h2 style="text-align: center; color: #1E90FF; margin-bottom: 30px; font-size: 2.5em;">Mission Statement</h2>
-        <div class="mission-container">
-            <div class="section-box">
-                <h3>Quantum Mechanics and General Relativity</h3>
-                <img src="Welcome/sceinceimage-1.jpg" alt="Science Image">
+    <!-- Mission Section -->
+    <div class="mission-container">
+        <!-- Section 1 -->
+        <div class="mission-section">
+            <img src="path/to/your-image1.jpg" alt="Quantum Mechanics Image">
+            <div class="mission-text">
+                <h2>Quantum Mechanics and General Relativity</h2>
                 <p>The theories of Quantum Mechanics and General Relativity are flawed and are hindering progress toward new fundamental discoveries in physics. In order to replace these theories, we must go back to the observations and reinterpret them. However, in an extremely advanced science like physics, observations can only be interpreted using earlier established theories. As a result, though many scientists agree that modern theories need to be corrected, none of them have been able to return to the observations and look at them with a perspective which is not colored by aspects of existing flawed theories.</p>
             </div>
-            <div class="section-box">
-                <h3>The Inductive Physics Project will overcome these challenges in three phases</h3>
-                <img src="Welcome/Screenshot%20from%202024-12-17%2018-08-56.png" alt="Project Image">
+        </div>
+
+        <!-- Section 2 -->
+        <div class="mission-section">
+            <div class="mission-text">
+                <h2>The Inductive Physics Project will overcome these challenges in three phases</h2>
                 <ul>
                     <li>Write a theory of induction: a systematic process for proving scientific conclusions from observation.</li>
                     <li>Use that theory to reprove the essential principles of known physics from observation. This will allow us to approach quantum and relativistic phenomena only using prior theories which can be known with certainty.</li>
                     <li>Armed with a clear background knowledge free of faulty assumptions, the Inductive Physics Project will develop new theories explaining quantum and relativistic phenomena.</li>
                 </ul>
             </div>
+            <img src="path/to/your-image2.jpg" alt="Inductive Physics Project Image">
         </div>
     </div>
-
-<!-- Embedded Video Section -->
-<div class="embed-container" style="display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap;">
-    <div>
-        <iframe src="https://www.youtube.com/embed/w4x7RLUizJ0" allowfullscreen></iframe>
-    </div>
-    <div style="max-width: 400px; text-align: left;">
-        <h2 style="color: #1E90FF; font-size: 2em; margin-bottom: 20px;">Watch on YouTube!</h2>
-        <p>Subscribe to Inductica on YouTube to follow the progress of the Inductive Physics Project.</p>
-        <a href="https://www.youtube.com/@Inductica" target="_blank" style="text-decoration: none;">
-            <button style="background-color: #4CAF50; color: white; border: none; padding: 10px 20px; font-size: 1em; border-radius: 5px; cursor: pointer;">
-                See More
-            </button>
-        </a>
-    </div>
-</div>
-
 
     <!-- Footer -->
     <footer>
-        <div class="footer-logo">
-            <img src="https://via.placeholder.com/200x80" alt="Inductica Logo">
-        </div>
         <p>&copy; 2024 Inductica. All Rights Reserved.</p>
     </footer>
+
 </body>
 </html>
