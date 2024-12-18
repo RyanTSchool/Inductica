@@ -37,7 +37,6 @@
         nav .nav-links a:hover {
             text-decoration: underline;
         }
-
         header {
             text-align: center;
             padding: 50px 20px;
@@ -78,43 +77,33 @@
             font-size: 1.2em;
             line-height: 1.6;
         }
-        h2.section-title {
-            color: #3498db;
-            text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-        h3.section-subtitle {
+        h2.section-title, h3.section-subtitle {
             color: #4CAF50;
-            font-size: 1.5em;
+            text-align: center;
+            font-size: 2em;
             margin-bottom: 20px;
-            text-align: center;
-        }
-        .cta-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            text-align: center;
-        }
-        .list-section {
-            flex: 1;
         }
         .list-section ul {
             list-style: none;
             padding: 0;
+            text-align: center;
             font-size: 1.2em;
         }
         .list-section ul li {
             margin-bottom: 10px;
         }
         .client-image {
-            flex: 1;
-            max-width: 500px;
+            display: block;
+            margin: 20px auto;
+            width: 400px;
+            height: auto;
+            border-radius: 50%;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        /* Large Tan Placeholder */
+        .section-placeholder {
+            background-color: #f0e8da;
+            height: 400px;
         }
         footer {
             background-color: #4CAF50;
@@ -123,7 +112,7 @@
             padding: 1em 0;
         }
         .footer-logo img {
-            max-width: 200px;
+            max-width: 100px;
         }
     </style>
 </head>
@@ -146,44 +135,28 @@
         <p>I help students achieve excellence in advanced math and physics topics.</p>
     </header>
 
-    <!-- About Tutoring Section -->
+    <!-- List of Subjects Covered -->
     <div class="section-light">
-        <div class="section">
-            <!-- Tutor's Picture -->
-            <img src="tutoringjames.jpg" alt="James Picture">
-            <!-- Tutor Information -->
-            <div class="section-text">
-                <p>
-                    I tutor upper-level undergraduate math and physics subjects both online and in person at a rate of <strong>$60/hr</strong>. Visit my tutoring profile to see reviews from happy customers from my 16 years of tutoring experience.
-                </p>
-                <a href="#" class="cta-button">Tutor Profile</a>
-            </div>
+        <h3 class="section-subtitle">List of Subjects Covered</h3>
+        <div class="list-section">
+            <ul>
+                <li>1. Calculus 3</li>
+                <li>2. Electricity and Magnetism</li>
+                <li>3. Differential Equations</li>
+                <li>4. Modern Physics</li>
+                <li>5. Linear Algebra</li>
+                <li>6. Thermodynamics</li>
+                <li>7. Electrodynamics</li>
+                <li>8. Quantum Mechanics</li>
+            </ul>
         </div>
+        <img src="tutoringclient.png" alt="Client Picture" class="client-image">
     </div>
 
-    <!-- Subjects and Client Experience -->
-    <div class="section-light">
-        <div class="section">
-            <!-- List of Subjects -->
-            <div class="list-section">
-                <h3 class="section-subtitle">List of Subjects Covered</h3>
-                <ul>
-                    <li>1. Calculus 3</li>
-                    <li>2. Electricity and Magnetism</li>
-                    <li>3. Differential Equations</li>
-                    <li>4. Modern Physics</li>
-                    <li>5. Linear Algebra</li>
-                    <li>6. Thermodynamics</li>
-                    <li>7. Electrodynamics</li>
-                    <li>8. Quantum Mechanics</li>
-                </ul>
-            </div>
-            <!-- Client Experience Image -->
-            <img src="tutoringclient.png" alt="Client Picture" class="client-image">
-        </div>
-    </div>
+    <!-- Large Tan Placeholder -->
+    <div class="section-placeholder"></div>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
         <div class="footer-logo">
             <img src="../general/Logo-Transparent.png" alt="Inductica Logo">
