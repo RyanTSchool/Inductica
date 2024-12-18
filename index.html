@@ -62,20 +62,46 @@
             object-fit: cover;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
+        .mission-text {
+            flex: 1;
+            text-align: justify;
+        }
+        .mission-text h2 {
+            color: #333;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        .mission-text h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .mission-text p, .mission-text ul {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .embed-container {
+            background-color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
         .embed-container-flex {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 30px;
             flex-wrap: wrap;
-            max-width: 85%; /* Reduced width */
+            max-width: 90%;
             margin: 0 auto;
         }
         iframe {
-            flex: 1;
+            flex: 1.5;
             min-width: 300px;
-            width: 90%; /* Slightly smaller */
-            height: 300px; /* Adjusted height */
+            width: 100%;
+            height: 350px;
             border: none;
         }
         .embed-text {
@@ -97,43 +123,6 @@
             color: white;
             border: none;
             padding: 12px 24px;
-            font-size: 1em;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .extra-section {
-            background-color: #f4f1eb;
-            padding: 50px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 30px;
-            max-width: 90%;
-            margin: 0 auto;
-        }
-        .extra-section .text {
-            flex: 1;
-            min-width: 300px;
-        }
-        .extra-section .text h2 {
-            color: #1E90FF;
-            font-size: 1.8em;
-            margin-bottom: 10px;
-        }
-        .extra-section img {
-            flex: 1;
-            max-width: 300px;
-            height: auto;
-            background-color: #ddd;
-            display: block;
-            margin: 0 auto;
-        }
-        .extra-section button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
             font-size: 1em;
             border-radius: 5px;
             cursor: pointer;
@@ -170,38 +159,36 @@
                 <img src="Welcome/sceinceimage-1.jpg" alt="Science Image">
                 <div class="mission-text">
                     <h2>Quantum Mechanics and General Relativity</h2>
-                    <p>The theories of Quantum Mechanics and General Relativity are flawed and are hindering progress toward new fundamental discoveries in physics...</p>
+                    <p>The theories of Quantum Mechanics and General Relativity are flawed and are hindering progress toward new fundamental discoveries in physics. In order to replace these theories, we must go back to the observations and reinterpret them. However, in an extremely advanced science like physics, observations can only be interpreted using earlier established theories. As a result, though many scientists agree that modern theories need to be corrected, none of them have been able to return to the observations and look at them with a perspective which is not colored by aspects of existing flawed theories.</p>
                 </div>
+            </div>
+
+            <!-- Section 2 -->
+            <div class="mission-section">
+                <div class="mission-text">
+                    <h2>The Inductive Physics Project will overcome these challenges in three phases</h2>
+                    <ul>
+                        <li>Write a theory of induction: a systematic process for proving scientific conclusions from observation.</li>
+                        <li>Use that theory to reprove the essential principles of known physics from observation. This will allow us to approach quantum and relativistic phenomena only using prior theories which can be known with certainty.</li>
+                        <li>Armed with a clear background knowledge free of faulty assumptions, the Inductive Physics Project will develop new theories explaining quantum and relativistic phenomena.</li>
+                    </ul>
+                </div>
+                <img src="Welcome/Screenshot%20from%202024-12-17%2018-08-56.png" alt="Project Image">
             </div>
         </div>
     </div>
 
     <!-- Embedded Video Section -->
     <div class="embed-container-flex">
+        <!-- Embedded Video -->
         <iframe src="https://www.youtube.com/embed/w4x7RLUizJ0" allowfullscreen></iframe>
+        <!-- Text and Button -->
         <div class="embed-text">
             <h2>Watch on YouTube!</h2>
             <p>Subscribe to Inductica on YouTube to follow the progress of the Inductive Physics Project.</p>
-            <a href="https://www.youtube.com/@Inductica" target="_blank"><button>See More</button></a>
-        </div>
-    </div>
-
-    <!-- New Sections -->
-    <div class="extra-section">
-        <div class="text">
-            <h2>Read More</h2>
-            <p>Visit my blog for more written content!</p>
-            <button>Blog</button>
-        </div>
-        <img src="https://via.placeholder.com/300x400" alt="Placeholder Image">
-    </div>
-
-    <div class="extra-section" style="background-color: #fff;">
-        <img src="https://via.placeholder.com/300x400" alt="Placeholder Image">
-        <div class="text">
-            <h2>Become a Patron!</h2>
-            <p>Support Inductica on Patreon! Members will receive access to donor-exclusive lectures.</p>
-            <button>Patreon</button>
+            <a href="https://www.youtube.com/@Inductica" target="_blank" style="text-decoration: none;">
+                <button>See More</button>
+            </a>
         </div>
     </div>
 
