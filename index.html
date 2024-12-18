@@ -15,7 +15,10 @@
             background: linear-gradient(135deg, #4CAF50 0%, #38a169 30%, #2a9d8f 60%, #3498db 100%);
             color: white;
             text-align: center;
-            padding: 2em 1em;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         header h1 {
             margin: 0;
@@ -34,16 +37,21 @@
             margin: 0 5px;
             font-size: 1.5em;
         }
+        .section-light, .section-tan {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
         .section-light {
             background-color: #f9f9f9;
-            padding: 20px;
         }
         .section-tan {
             background-color: #f0e8da;
-            padding: 20px;
         }
         section {
-            margin: 20px auto;
+            margin: 0 auto;
             max-width: 800px;
             background-color: #fff;
             padding: 20px;
@@ -54,10 +62,9 @@
             color: #4CAF50;
             margin-bottom: 10px;
         }
-        img.placeholder {
+        img {
             width: 100%;
             height: auto;
-            background-color: #ccc;
         }
         .cta-button {
             display: inline-block;
@@ -96,8 +103,8 @@
     <div class="section-tan">
         <section>
             <h2 class="section-title">Mission Statement</h2>
-            <img src="https://via.placeholder.com/600x300" alt="Placeholder" class="placeholder">
-            <p>The theories of Quantum Mechanics and General Relativity are foundational to modern physics. Despite remarkable advancements, these theories have unresolved conflicts, posing significant scientific challenges.</p>
+            <img src="Welcome/scienceimage-1.jpg" alt="Science Image">
+            <p>The theories of Quantum Mechanics and General Relativity are flawed and are hindering progress toward new fundamental discoveries in physics. In order to replace these theories, we must go back to the observations and reinterpret them. However, in an extremely advanced science like physics, observations can only be interpreted using earlier established theories. As a result, though many scientists agree that modern theories need to be corrected, none of them have been able to return to the observations and look at them with a perspective which is not colored by aspects of existing flawed theories.</p>
         </section>
     </div>
 
@@ -105,7 +112,7 @@
     <div class="section-light">
         <section>
             <h2 class="section-title">The Inductica Physics Project</h2>
-            <img src="https://via.placeholder.com/600x300" alt="Placeholder" class="placeholder">
+            <img src="https://via.placeholder.com/600x300" alt="Placeholder">
             <ul>
                 <li>Write a theory of induction as a systematic process for deriving scientific laws.</li>
                 <li>Use this theory to overcome current physical conflicts and broaden understanding.</li>
@@ -118,7 +125,7 @@
     <div class="section-tan">
         <section>
             <h2 class="section-title">Watch on YouTube!</h2>
-            <img src="https://via.placeholder.com/600x300" alt="YouTube Thumbnail" class="placeholder">
+            <img src="https://via.placeholder.com/600x300" alt="YouTube Thumbnail">
             <p>Subscribe to our YouTube channel to explore more about the Inductica Physics Project.</p>
             <a href="#" class="cta-button">See More</a>
         </section>
@@ -128,7 +135,7 @@
     <div class="section-light">
         <section>
             <h2 class="section-title">Read More</h2>
-            <img src="https://via.placeholder.com/600x300" alt="Blog Image" class="placeholder">
+            <img src="https://via.placeholder.com/600x300" alt="Blog Image">
             <p>Visit our blog to stay updated on our latest written content!</p>
             <a href="#" class="cta-button">Blog</a>
         </section>
@@ -138,7 +145,7 @@
     <div class="section-tan">
         <section>
             <h2 class="section-title">Become a Patron!</h2>
-            <img src="https://via.placeholder.com/600x300" alt="Patreon Logo" class="placeholder">
+            <img src="https://via.placeholder.com/600x300" alt="Patreon Logo">
             <p>Support Inductica on Patreon! Members will receive exclusive access to extra content.</p>
             <a href="#" class="cta-button">Patreon</a>
         </section>
