@@ -39,7 +39,7 @@
             font-size: 1.5em;
         }
         .section-tan {
-            background-color: #f4f1eb; /* Updated tan background */
+            background-color: #f4f1eb;
             padding: 50px 20px;
         }
         .mission-container {
@@ -88,11 +88,44 @@
             padding: 50px 20px;
             text-align: center;
         }
+        .embed-container-flex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            max-width: 90%;
+            margin: 0 auto;
+        }
         iframe {
+            flex: 1.5;
+            min-width: 300px;
             width: 100%;
-            max-width: 560px;
-            height: 315px;
+            height: 350px;
             border: none;
+        }
+        .embed-text {
+            flex: 1;
+            min-width: 300px;
+            text-align: left;
+        }
+        .embed-text h2 {
+            color: #1E90FF;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .embed-text p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        .embed-text button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
         }
         footer {
             background-color: #4CAF50;
@@ -145,40 +178,19 @@
         </div>
     </div>
 
-<!-- Embedded Video Section -->
-<div class="embed-container" style="display: flex; align-items: center; justify-content: center; gap: 30px; flex-wrap: wrap; max-width: 90%; margin: 0 auto;">
-    <!-- Embedded Video -->
-    <div style="flex: 1.5; min-width: 300px;">
-        <iframe src="https://www.youtube.com/embed/w4x7RLUizJ0" allowfullscreen style="width: 100%; height: 350px;"></iframe>
+    <!-- Embedded Video Section -->
+    <div class="embed-container-flex">
+        <!-- Embedded Video -->
+        <iframe src="https://www.youtube.com/embed/w4x7RLUizJ0" allowfullscreen></iframe>
+        <!-- Text and Button -->
+        <div class="embed-text">
+            <h2>Watch on YouTube!</h2>
+            <p>Subscribe to Inductica on YouTube to follow the progress of the Inductive Physics Project.</p>
+            <a href="https://www.youtube.com/@Inductica" target="_blank" style="text-decoration: none;">
+                <button>See More</button>
+            </a>
+        </div>
     </div>
-    <!-- Text and Button -->
-    <div style="flex: 1; min-width: 300px; text-align: left;">
-        <h2 style="color: #1E90FF; font-size: 2em; margin-bottom: 10px;">Watch on YouTube!</h2>
-        <p style="font-size: 1.1em; margin-bottom: 20px;">
-            Subscribe to Inductica on YouTube to follow the progress of the Inductive Physics Project.
-        </p>
-        <a href="https://www.youtube.com/@Inductica" target="_blank" style="text-decoration: none;">
-            <button style="background-color: #4CAF50; color: white; border: none; padding: 12px 24px; font-size: 1em; border-radius: 5px; cursor: pointer;">
-                See More
-            </button>
-        </a>
-    </div>
-</div>
-
-    <!-- Text and Button -->
-    <div style="max-width: 400px; text-align: left;">
-        <h2 style="color: #1E90FF; font-size: 1.8em; margin-bottom: 10px;">Watch on YouTube!</h2>
-        <p style="margin-bottom: 20px;">
-            Subscribe to Inductica on YouTube to follow the progress of the Inductive Physics Project.
-        </p>
-        <a href="https://www.youtube.com/@Inductica" target="_blank" style="text-decoration: none;">
-            <button style="background-color: #4CAF50; color: white; border: none; padding: 10px 20px; font-size: 1em; border-radius: 5px; cursor: pointer;">
-                See More
-            </button>
-        </a>
-    </div>
-</div>
-
 
     <!-- Footer -->
     <footer>
