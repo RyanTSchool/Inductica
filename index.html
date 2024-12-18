@@ -48,13 +48,14 @@
         }
         .section-tan {
             background-color: #f0e8da;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
         }
         .mission-container {
             max-width: 1200px;
             margin: 0 auto;
-            background-color: white;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            padding: 20px;
             text-align: center;
         }
         .mission-container h2 {
@@ -63,13 +64,14 @@
             margin-bottom: 20px;
         }
         .section-box {
-            display: flex;
-            flex-direction: column;
             background-color: #fff;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            margin: 20px 0;
-            width: 48%;
+            width: 45%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
         }
         .section-box h3 {
             font-size: 1.5em;
@@ -85,12 +87,6 @@
             width: 100%;
             height: auto;
             margin-bottom: 15px;
-        }
-        .section-container {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 20px;
         }
         footer {
             background-color: #4CAF50;
@@ -119,21 +115,19 @@
     <div class="section-tan">
         <div class="mission-container">
             <h2>Mission Statement</h2>
-            <div class="section-container">
-                <div class="section-box">
-                    <h3>Quantum Mechanics and General Relativity</h3>
-                    <img src="Welcome/sceinceimage-1.jpg" alt="Science Image">
-                    <p>The theories of Quantum Mechanics and General Relativity are flawed and are hindering progress toward new fundamental discoveries in physics. In order to replace these theories, we must go back to the observations and reinterpret them. However, in an extremely advanced science like physics, observations can only be interpreted using earlier established theories. As a result, though many scientists agree that modern theories need to be corrected, none of them have been able to return to the observations and look at them with a perspective which is not colored by aspects of existing flawed theories.</p>
-                </div>
-                <div class="section-box">
-                    <h3>The Inductive Physics Project will overcome these challenges in three phases</h3>
-                    <img src="Welcome/Screenshot%20from%202024-12-17%2018-08-56.png" alt="Project Image">
-                    <ul>
-                        <li>Write a theory of induction: a systematic process for proving scientific conclusions from observation.</li>
-                        <li>Use that theory to reprove the essential principles of known physics from observation. This will allow us to approach quantum and relativistic phenomena only using prior theories which can be known with certainty.</li>
-                        <li>Armed with a clear background knowledge free of faulty assumptions, the Inductive Physics Project will develop new theories explaining quantum and relativistic phenomena.</li>
-                    </ul>
-                </div>
+            <div class="section-box">
+                <h3>Quantum Mechanics and General Relativity</h3>
+                <img src="Welcome/sceinceimage-1.jpg" alt="Science Image">
+                <p>The theories of Quantum Mechanics and General Relativity are flawed and are hindering progress toward new fundamental discoveries in physics. In order to replace these theories, we must go back to the observations and reinterpret them. However, in an extremely advanced science like physics, observations can only be interpreted using earlier established theories. As a result, though many scientists agree that modern theories need to be corrected, none of them have been able to return to the observations and look at them with a perspective which is not colored by aspects of existing flawed theories.</p>
+            </div>
+            <div class="section-box">
+                <h3>The Inductive Physics Project will overcome these challenges in three phases</h3>
+                <img src="Welcome/Screenshot%20from%202024-12-17%2018-08-56.png" alt="Project Image">
+                <ul>
+                    <li>Write a theory of induction: a systematic process for proving scientific conclusions from observation.</li>
+                    <li>Use that theory to reprove the essential principles of known physics from observation. This will allow us to approach quantum and relativistic phenomena only using prior theories which can be known with certainty.</li>
+                    <li>Armed with a clear background knowledge free of faulty assumptions, the Inductive Physics Project will develop new theories explaining quantum and relativistic phenomena.</li>
+                </ul>
             </div>
         </div>
     </div>
