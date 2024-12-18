@@ -34,30 +34,35 @@
             margin: 0 5px;
             font-size: 1.5em;
         }
+        .section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
         .section-light {
             background-color: #f9f9f9;
-            padding: 20px;
         }
         .section-tan {
             background-color: #f0e8da;
-            padding: 20px;
         }
-        section {
-            margin: 20px auto;
-            max-width: 800px;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .section-title {
-            text-align: center;
-            color: #4CAF50;
-            margin-bottom: 10px;
-        }
-        img.placeholder {
-            width: 100%;
+        .section img {
+            width: 300px;
             height: auto;
-            background-color: #ccc;
+            object-fit: cover;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .section-text {
+            flex: 1;
+            text-align: justify;
+        }
+        h2.section-title {
+            color: #4CAF50;
+            font-size: 2em;
+            margin-bottom: 10px;
         }
         .cta-button {
             display: inline-block;
@@ -66,7 +71,8 @@
             color: white;
             text-decoration: none;
             border-radius: 5px;
-            text-align: center;
+            font-weight: bold;
+            margin-top: 10px;
         }
         footer {
             background-color: #4CAF50;
@@ -86,68 +92,79 @@
         <h1>Inductica</h1>
         <p>"To stand on the shoulders of giants, you must make the climb, earning every handhold yourself."</p>
         <div class="icons">
-            <a href="#">&#9733;</a>
-            <a href="#">&#9733;</a>
-            <a href="#">&#9733;</a>
+            <a href="#"><img src="general/discordlogo.png" alt="Discord" width="30px"></a>
+            <a href="#"><img src="general/facebooklogo.png" alt="Facebook" width="30px"></a>
+            <a href="#"><img src="general/patreonlogo.png" alt="Patreon" width="30px"></a>
+            <a href="#"><img src="general/youtubelogo.png" alt="YouTube" width="30px"></a>
         </div>
     </header>
 
-    <!-- Mission Statement -->
+    <!-- Mission Section -->
     <div class="section-tan">
-        <section>
-            <h2 class="section-title">Mission Statement</h2>
-            <img src="https://via.placeholder.com/600x300" alt="Placeholder" class="placeholder">
-            <p>The theories of Quantum Mechanics and General Relativity are foundational to modern physics. Despite remarkable advancements, these theories have unresolved conflicts, posing significant scientific challenges.</p>
-        </section>
+        <div class="section">
+            <img src="Welcome/800px-Uomo_Vitruviano-739x1024.jpg" alt="Mission Image">
+            <div class="section-text">
+                <h2 class="section-title">Mission Statement</h2>
+                <p>The theories of Quantum Mechanics and General Relativity are foundational to modern physics. Despite remarkable advancements, these theories have unresolved conflicts, posing significant scientific challenges.</p>
+            </div>
+        </div>
     </div>
 
     <!-- Project Phases -->
     <div class="section-light">
-        <section>
-            <h2 class="section-title">The Inductica Physics Project</h2>
-            <img src="https://via.placeholder.com/600x300" alt="Placeholder" class="placeholder">
-            <ul>
-                <li>Write a theory of induction as a systematic process for deriving scientific laws.</li>
-                <li>Use this theory to overcome current physical conflicts and broaden understanding.</li>
-                <li>Accelerate modern physics exploration through systematic thinking.</li>
-            </ul>
-        </section>
+        <div class="section">
+            <div class="section-text">
+                <h2 class="section-title">The Inductica Physics Project</h2>
+                <ul>
+                    <li>Write a theory of induction as a systematic process for deriving scientific laws.</li>
+                    <li>Use this theory to overcome current physical conflicts and broaden understanding.</li>
+                    <li>Accelerate modern physics exploration through systematic thinking.</li>
+                </ul>
+            </div>
+            <img src="Welcome/Screenshot-2024-06-22-202801.png" alt="Project Image">
+        </div>
     </div>
 
     <!-- YouTube Section -->
     <div class="section-tan">
-        <section>
-            <h2 class="section-title">Watch on YouTube!</h2>
-            <img src="https://via.placeholder.com/600x300" alt="YouTube Thumbnail" class="placeholder">
-            <p>Subscribe to our YouTube channel to explore more about the Inductica Physics Project.</p>
-            <a href="#" class="cta-button">See More</a>
-        </section>
+        <div class="section">
+            <img src="general/youtubelogo.png" alt="YouTube Thumbnail">
+            <div class="section-text">
+                <h2 class="section-title">Watch on YouTube!</h2>
+                <p>Subscribe to our YouTube channel to explore more about the Inductica Physics Project.</p>
+                <a href="https://www.youtube.com/@Inductica" class="cta-button">See More</a>
+            </div>
+        </div>
     </div>
 
     <!-- Blog Section -->
     <div class="section-light">
-        <section>
-            <h2 class="section-title">Read More</h2>
-            <img src="https://via.placeholder.com/600x300" alt="Blog Image" class="placeholder">
-            <p>Visit our blog to stay updated on our latest written content!</p>
-            <a href="#" class="cta-button">Blog</a>
-        </section>
+        <div class="section">
+            <div class="section-text">
+                <h2 class="section-title">Read More</h2>
+                <p>Visit our blog to stay updated on our latest written content!</p>
+                <a href="#" class="cta-button">Blog</a>
+            </div>
+            <img src="general/Xtwitter.jpg" alt="Blog Image">
+        </div>
     </div>
 
     <!-- Patreon Section -->
     <div class="section-tan">
-        <section>
-            <h2 class="section-title">Become a Patron!</h2>
-            <img src="https://via.placeholder.com/600x300" alt="Patreon Logo" class="placeholder">
-            <p>Support Inductica on Patreon! Members will receive exclusive access to extra content.</p>
-            <a href="#" class="cta-button">Patreon</a>
-        </section>
+        <div class="section">
+            <img src="general/patreonlogo.png" alt="Patreon Logo">
+            <div class="section-text">
+                <h2 class="section-title">Become a Patron!</h2>
+                <p>Support Inductica on Patreon! Members will receive exclusive access to extra content.</p>
+                <a href="#" class="cta-button">Patreon</a>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->
     <footer>
         <div class="footer-logo">
-            <img src="https://via.placeholder.com/200x80" alt="Inductica Logo">
+            <img src="general/Logo-Transparent.png" alt="Inductica Logo">
         </div>
         <p>&copy; 2024 Inductica. All Rights Reserved.</p>
     </footer>
