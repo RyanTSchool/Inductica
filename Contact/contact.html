@@ -24,47 +24,37 @@
             max-width: 1000px;
             margin: 0 auto;
             display: flex;
-            align-items: center;
             gap: 40px;
-            flex-wrap: nowrap;
-        }
-        .section img {
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            object-fit: cover;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
         }
         .section-text {
             flex: 1;
-            text-align: left;
         }
-        .section-text p {
+        .section-text p, .section-text ul {
             font-size: 1.2em;
             line-height: 1.6;
+        }
+        .client-image {
+            flex: 1;
+            max-width: 500px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
         h2.section-title, h3.section-subtitle {
             color: #4CAF50;
             text-align: center;
             margin-bottom: 20px;
         }
-        .cta-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            margin-top: 10px;
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
         }
-        .client-image {
-            width: 100%;
-            max-width: 600px;
-            margin: 30px auto 0;
-            display: block;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        ul li {
+            margin-bottom: 10px;
         }
-                footer {
+        footer {
             background-color: #4CAF50;
             color: white;
             text-align: center;
@@ -76,41 +66,37 @@
     </style>
 </head>
 <body>
- <!-- White Section: About Tutoring -->
-<div class="section-light">
-    <h2 class="section-title">About Tutoring</h2>
-    <div class="section" style="flex-wrap: nowrap; gap: 40px;">
-        <!-- James' Picture -->
-        <img src="tutoringjames.jpg" alt="James Picture" style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover;">
-        
-        <!-- Tutoring Information -->
-        <div class="section-text">
-            <p>
-                I tutor upper-level undergraduate math and physics subjects both online and in person at a rate of <strong>$60/hr</strong>. Visit my tutoring profile to see reviews from happy customers from my 16 years of tutoring experience.
-            </p>
-            <a href="#" class="cta-button" style="background-color: #4CAF50; color: white;">Tutor Profile</a>
+    <!-- White Section: About Tutoring -->
+    <div class="section-light">
+        <h2 class="section-title">List of Subjects Covered</h2>
+        <div class="section">
+            <!-- List of Subjects -->
+            <div class="section-text">
+                <ul>
+                    <li>1. Calculus 3</li>
+                    <li>2. Electricity and Magnetism</li>
+                    <li>3. Differential Equations</li>
+                    <li>4. Modern Physics</li>
+                    <li>5. Linear Algebra</li>
+                    <li>6. Thermodynamics</li>
+                    <li>7. Electrodynamics</li>
+                    <li>8. Quantum Mechanics</li>
+                </ul>
+            </div>
+            <!-- Client Picture -->
+            <img src="tutoringclient.png" alt="Client Picture" class="client-image">
         </div>
     </div>
 
-    <!-- Client Picture Section -->
-    <div style="margin-top: 30px; text-align: center;">
-        <h3 style="font-size: 1.8em; color: #4CAF50; margin-bottom: 20px;">Client Experience</h3>
-        <img src="tutoringclient.png" alt="Client Picture" style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto; box-shadow: 0 4px 6px rgba(0,0,0,0.2);">
-    </div>
-</div>
-
-<!-- Blank Tan Section -->
-<div class="section-tan"></div>
+    <!-- Blank Tan Section -->
+    <div class="section-tan"></div>
 
     <!-- Footer -->
     <footer>
         <div class="footer-logo">
-            
-<img src="../general/Logo-Transparent.png" alt="Inductica Logo">
-            
+            <img src="../general/Logo-Transparent.png" alt="Inductica Logo">
         </div>
         <p>&copy; 2024 Inductica. All Rights Reserved.</p>
     </footer>
-    
 </body>
 </html>
