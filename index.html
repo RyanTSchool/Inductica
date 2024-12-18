@@ -9,19 +9,38 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f1eb; /* Updated to a darker tan */
             color: #333;
+            background-color: #fff;
         }
         header {
+            background: linear-gradient(135deg, #4CAF50 0%, #38a169 30%, #2a9d8f 60%, #3498db 100%);
+            color: white;
             text-align: center;
-            padding: 20px;
-            background-color: #f4f1eb;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         header h1 {
-            color: #0074cc;
-            font-size: 2.5em;
             margin: 0;
-            text-transform: uppercase;
+            font-size: 3em;
+        }
+        header p {
+            font-style: italic;
+            margin: 10px 0;
+        }
+        .icons {
+            margin-top: 10px;
+        }
+        .icons a {
+            color: white;
+            text-decoration: none;
+            margin: 0 5px;
+            font-size: 1.5em;
+        }
+        .section-tan {
+            background-color: #f4f1eb; /* Updated tan background */
+            padding: 50px 20px;
         }
         .mission-container {
             max-width: 1200px;
@@ -64,50 +83,80 @@
         ul {
             padding-left: 20px;
         }
-        footer {
+        .embed-container {
+            background-color: #fff;
+            padding: 50px 20px;
             text-align: center;
-            padding: 10px 0;
+        }
+        iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            border: none;
+        }
+        footer {
             background-color: #4CAF50;
             color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .footer-logo img {
+            max-width: 200px;
         }
     </style>
 </head>
 <body>
-
     <!-- Header -->
     <header>
-        <h1>Mission Statement</h1>
+        <h1>Inductica</h1>
+        <p>"To stand on the shoulders of giants, you must make the climb, earning every handhold yourself."</p>
+        <div class="icons">
+            <a href="#">&#9733;</a>
+            <a href="#">&#9733;</a>
+            <a href="#">&#9733;</a>
+        </div>
     </header>
 
-    <!-- Mission Section -->
-    <div class="mission-container">
-        <!-- Section 1 -->
-        <div class="mission-section">
-            <img src="path/to/your-image1.jpg" alt="Quantum Mechanics Image">
-            <div class="mission-text">
-                <h2>Quantum Mechanics and General Relativity</h2>
-                <p>The theories of Quantum Mechanics and General Relativity are flawed and are hindering progress toward new fundamental discoveries in physics. In order to replace these theories, we must go back to the observations and reinterpret them. However, in an extremely advanced science like physics, observations can only be interpreted using earlier established theories. As a result, though many scientists agree that modern theories need to be corrected, none of them have been able to return to the observations and look at them with a perspective which is not colored by aspects of existing flawed theories.</p>
+    <!-- Mission Statement -->
+    <div class="section-tan">
+        <h2 style="text-align: center; color: #0074cc; font-size: 2.5em; margin-bottom: 30px;">Mission Statement</h2>
+        <div class="mission-container">
+            <!-- Section 1 -->
+            <div class="mission-section">
+                <img src="Welcome/sceinceimage-1.jpg" alt="Science Image">
+                <div class="mission-text">
+                    <h2>Quantum Mechanics and General Relativity</h2>
+                    <p>The theories of Quantum Mechanics and General Relativity are flawed and are hindering progress toward new fundamental discoveries in physics. In order to replace these theories, we must go back to the observations and reinterpret them. However, in an extremely advanced science like physics, observations can only be interpreted using earlier established theories. As a result, though many scientists agree that modern theories need to be corrected, none of them have been able to return to the observations and look at them with a perspective which is not colored by aspects of existing flawed theories.</p>
+                </div>
             </div>
-        </div>
 
-        <!-- Section 2 -->
-        <div class="mission-section">
-            <div class="mission-text">
-                <h2>The Inductive Physics Project will overcome these challenges in three phases</h2>
-                <ul>
-                    <li>Write a theory of induction: a systematic process for proving scientific conclusions from observation.</li>
-                    <li>Use that theory to reprove the essential principles of known physics from observation. This will allow us to approach quantum and relativistic phenomena only using prior theories which can be known with certainty.</li>
-                    <li>Armed with a clear background knowledge free of faulty assumptions, the Inductive Physics Project will develop new theories explaining quantum and relativistic phenomena.</li>
-                </ul>
+            <!-- Section 2 -->
+            <div class="mission-section">
+                <div class="mission-text">
+                    <h2>The Inductive Physics Project will overcome these challenges in three phases</h2>
+                    <ul>
+                        <li>Write a theory of induction: a systematic process for proving scientific conclusions from observation.</li>
+                        <li>Use that theory to reprove the essential principles of known physics from observation. This will allow us to approach quantum and relativistic phenomena only using prior theories which can be known with certainty.</li>
+                        <li>Armed with a clear background knowledge free of faulty assumptions, the Inductive Physics Project will develop new theories explaining quantum and relativistic phenomena.</li>
+                    </ul>
+                </div>
+                <img src="Welcome/Screenshot%20from%202024-12-17%2018-08-56.png" alt="Project Image">
             </div>
-            <img src="path/to/your-image2.jpg" alt="Inductive Physics Project Image">
         </div>
+    </div>
+
+    <!-- Embedded Video Section -->
+    <div class="embed-container">
+        <h2 style="color: #1E90FF; font-size: 2em; margin-bottom: 20px;">Take Part</h2>
+        <iframe src="https://www.youtube.com/embed/w4x7RLUizJ0" allowfullscreen></iframe>
     </div>
 
     <!-- Footer -->
     <footer>
+        <div class="footer-logo">
+            <img src="https://via.placeholder.com/200x80" alt="Inductica Logo">
+        </div>
         <p>&copy; 2024 Inductica. All Rights Reserved.</p>
     </footer>
-
 </body>
 </html>
