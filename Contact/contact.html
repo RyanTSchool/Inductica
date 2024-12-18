@@ -3,66 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inductica</title>
+    <title>Inductica Tutoring</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             color: #333;
+            background-color: #fff;
         }
-        header {
-            background: linear-gradient(135deg, #4CAF50 0%, #38a169 30%, #2a9d8f 60%, #3498db 100%);
-            color: white;
-            text-align: center;
-            padding: 2em 1em;
+        .section-light {
+            background-color: #f9f9f9;
+            padding: 50px 20px;
         }
-        header h1 {
-            margin: 0;
-            font-size: 3em;
-        }
-        header p {
-            font-style: italic;
-            margin: 10px 0;
-        }
-        .icons {
-            margin-top: 10px;
-        }
-        .icons a {
-            color: white;
-            text-decoration: none;
-            margin: 0 5px;
-            font-size: 1.5em;
+        .section-tan {
+            background-color: #f0e8da;
+            height: 300px; /* Blank Tan Section */
         }
         .section {
-            padding: 50px 20px;
             max-width: 1000px;
             margin: 0 auto;
             display: flex;
             align-items: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .section-light {
-            background-color: #f9f9f9;
-        }
-        .section-tan {
-            background-color: #f0e8da;
+            gap: 40px;
+            flex-wrap: nowrap;
         }
         .section img {
             width: 300px;
-            height: auto;
+            height: 300px;
+            border-radius: 50%;
             object-fit: cover;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .section-text {
             flex: 1;
-            text-align: justify;
+            text-align: left;
         }
-        h2.section-title {
+        .section-text p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        h2.section-title, h3.section-subtitle {
             color: #4CAF50;
-            font-size: 2em;
-            margin-bottom: 10px;
+            text-align: center;
+            margin-bottom: 20px;
         }
         .cta-button {
             display: inline-block;
@@ -74,99 +57,37 @@
             font-weight: bold;
             margin-top: 10px;
         }
-        footer {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-        }
-        .footer-logo img {
-            max-width: 200px;
-            margin-bottom: 10px;
+        .client-image {
+            width: 100%;
+            max-width: 600px;
+            margin: 30px auto 0;
+            display: block;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <h1>Inductica</h1>
-        <p>"To stand on the shoulders of giants, you must make the climb, earning every handhold yourself."</p>
-        <div class="icons">
-            <a href="#"><img src="general/discordlogo.png" alt="Discord" width="30px"></a>
-            <a href="#"><img src="general/facebooklogo.png" alt="Facebook" width="30px"></a>
-            <a href="#"><img src="general/patreonlogo.png" alt="Patreon" width="30px"></a>
-            <a href="#"><img src="general/youtubelogo.png" alt="YouTube" width="30px"></a>
-        </div>
-    </header>
-
-    <!-- Mission Section -->
-    <div class="section-tan">
-        <div class="section">
-            <img src="Welcome/800px-Uomo_Vitruviano-739x1024.jpg" alt="Mission Image">
-            <div class="section-text">
-                <h2 class="section-title">Mission Statement</h2>
-                <p>The theories of Quantum Mechanics and General Relativity are foundational to modern physics. Despite remarkable advancements, these theories have unresolved conflicts, posing significant scientific challenges.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Project Phases -->
+    <!-- White Section: About Tutoring -->
     <div class="section-light">
+        <h2 class="section-title">About Tutoring</h2>
         <div class="section">
+            <!-- James' Picture -->
+            <img src="Contact/tutoringjames.jpg" alt="James Picture">
+            <!-- Tutoring Information -->
             <div class="section-text">
-                <h2 class="section-title">The Inductica Physics Project</h2>
-                <ul>
-                    <li>Write a theory of induction as a systematic process for deriving scientific laws.</li>
-                    <li>Use this theory to overcome current physical conflicts and broaden understanding.</li>
-                    <li>Accelerate modern physics exploration through systematic thinking.</li>
-                </ul>
-            </div>
-            <img src="Welcome/Screenshot-2024-06-22-202801.png" alt="Project Image">
-        </div>
-    </div>
-
-    <!-- YouTube Section -->
-    <div class="section-tan">
-        <div class="section">
-            <img src="general/youtubelogo.png" alt="YouTube Thumbnail">
-            <div class="section-text">
-                <h2 class="section-title">Watch on YouTube!</h2>
-                <p>Subscribe to our YouTube channel to explore more about the Inductica Physics Project.</p>
-                <a href="https://www.youtube.com/@Inductica" class="cta-button">See More</a>
+                <p>
+                    I tutor upper-level undergraduate math and physics subjects both online and in person at a rate of <strong>$60/hr</strong>. Visit my tutoring profile to see reviews from happy customers from my 16 years of tutoring experience.
+                </p>
+                <a href="#" class="cta-button">Tutor Profile</a>
             </div>
         </div>
+
+        <!-- Client Picture Section -->
+        <h3 class="section-subtitle">Client Experience</h3>
+        <img src="Contact/tutoringclient.png" alt="Client Picture" class="client-image">
     </div>
 
-    <!-- Blog Section -->
-    <div class="section-light">
-        <div class="section">
-            <div class="section-text">
-                <h2 class="section-title">Read More</h2>
-                <p>Visit our blog to stay updated on our latest written content!</p>
-                <a href="#" class="cta-button">Blog</a>
-            </div>
-            <img src="general/Xtwitter.jpg" alt="Blog Image">
-        </div>
-    </div>
-
-    <!-- Patreon Section -->
-    <div class="section-tan">
-        <div class="section">
-            <img src="general/patreonlogo.png" alt="Patreon Logo">
-            <div class="section-text">
-                <h2 class="section-title">Become a Patron!</h2>
-                <p>Support Inductica on Patreon! Members will receive exclusive access to extra content.</p>
-                <a href="#" class="cta-button">Patreon</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-logo">
-            <img src="general/Logo-Transparent.png" alt="Inductica Logo">
-        </div>
-        <p>&copy; 2024 Inductica. All Rights Reserved.</p>
-    </footer>
+    <!-- Blank Tan Section -->
+    <div class="section-tan"></div>
 </body>
 </html>
