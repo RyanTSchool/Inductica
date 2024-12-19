@@ -3,170 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inductica</title>
+    <title>{{Page Title}}</title> <!-- Replace {{Page Title}} with your page's title -->
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             color: #333;
+            background-color: #fff;
         }
+
+        /* Header Section */
         header {
             background: linear-gradient(135deg, #4CAF50 0%, #38a169 30%, #2a9d8f 60%, #3498db 100%);
             color: white;
             text-align: center;
-            padding: 2em 1em;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
         }
-        header h1 {
-            margin: 0;
-            font-size: 3em;
+
+        /* Navigation Bar */
+        nav {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 50px;
+            box-sizing: border-box;
         }
-        header p {
-            font-style: italic;
-            margin: 10px 0;
+
+        nav .logo img {
+            width: 80px; /* Larger logo */
+            height: auto;
         }
-        .icons {
-            margin-top: 10px;
-        }
-        .icons a {
+
+        nav a {
             color: white;
             text-decoration: none;
-            margin: 0 5px;
-            font-size: 1.5em;
+            font-size: 1.5em; /* Larger navigation text */
+            font-weight: bold;
+            margin: 0 15px;
         }
-        .section {
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header Content */
+        header h1 {
+            font-size: 2.5em;
+            margin: 20px 0;
+        }
+
+        header p {
+            font-size: 1.3em;
+            margin: 0;
+        }
+
+        /* Section Styles */
+        .section-light {
+            background-color: #f9f9f9;
             padding: 50px 20px;
+        }
+
+        .section {
             max-width: 1000px;
             margin: 0 auto;
             display: flex;
-            align-items: center;
-            gap: 20px;
-            flex-wrap: wrap;
+            align-items: flex-start;
+            gap: 40px;
         }
-        .section-light {
-            background-color: #f9f9f9;
-        }
-        .section-tan {
-            background-color: #f0e8da;
-        }
+
         .section img {
             width: 300px;
-            height: auto;
+            height: 300px;
+            border-radius: 50%;
             object-fit: cover;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+
         .section-text {
             flex: 1;
-            text-align: justify;
+            text-align: left;
         }
-        h2.section-title {
+
+        .section-text p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        h2.section-title, h3.section-subtitle {
             color: #4CAF50;
+            text-align: center;
             font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .list-section ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        .list-section ul li {
             margin-bottom: 10px;
         }
-        .cta-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            margin-top: 10px;
+
+        .client-image {
+            display: block;
+            margin: 20px auto;
+            width: 400px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
+
+        /* Placeholder Tan Section */
+        .section-placeholder {
+            background-color: #f0e8da;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            color: #555;
+        }
+
+        /* Footer */
         footer {
             background-color: #4CAF50;
             color: white;
             text-align: center;
             padding: 1em 0;
         }
+
         .footer-logo img {
-            max-width: 200px;
-            margin-bottom: 10px;
+            max-width: 80px;
         }
     </style>
 </head>
 <body>
+
     <!-- Header -->
     <header>
-        <h1>Inductica</h1>
-        <p>"To stand on the shoulders of giants, you must make the climb, earning every handhold yourself."</p>
-        <div class="icons">
-            <a href="#"><img src="general/discordlogo.png" alt="Discord" width="30px"></a>
-            <a href="#"><img src="general/facebooklogo.png" alt="Facebook" width="30px"></a>
-            <a href="#"><img src="general/patreonlogo.png" alt="Patreon" width="30px"></a>
-            <a href="#"><img src="general/youtubelogo.png" alt="YouTube" width="30px"></a>
+        <!-- Top Navigation Bar -->
+        <nav>
+            <!-- Logo -->
+            <a href="{{Root Directory}}/index.html" class="logo">
+                <img src="{{Root Directory}}/general/Logo-Transparent.png" alt="Inductica Logo">
+            </a>
+            <!-- Navigation Links -->
+            <div>
+                <a href="{{Root Directory}}/index.html">Home</a>
+                <a href="{{Root Directory}}/Contact/contact.html">Contact</a>
+                <a href="{{Root Directory}}/#blog">Blog</a>
+            </div>
+        </nav>
+
+        <!-- Centered Header Content -->
+        <div>
+            <h1>{{Header Title}}</h1> <!-- Replace {{Header Title}} with your text -->
+            <p>{{Header Subtitle}}</p> <!-- Replace {{Header Subtitle}} with your text -->
         </div>
     </header>
 
-    <!-- Mission Section -->
-    <div class="section-tan">
-        <div class="section">
-            <img src="Welcome/800px-Uomo_Vitruviano-739x1024.jpg" alt="Mission Image">
-            <div class="section-text">
-                <h2 class="section-title">Mission Statement</h2>
-                <p>The theories of Quantum Mechanics and General Relativity are foundational to modern physics. Despite remarkable advancements, these theories have unresolved conflicts, posing significant scientific challenges.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Project Phases -->
+    <!-- About Tutoring Section -->
     <div class="section-light">
+        <h2 class="section-title">{{Section Title}}</h2> <!-- Replace {{Section Title}} -->
         <div class="section">
+            <!-- Image Placeholder -->
+            <img src="{{Root Directory}}/tutoring_placeholder.jpg" alt="Image Placeholder">
+            <!-- Section Information -->
             <div class="section-text">
-                <h2 class="section-title">The Inductica Physics Project</h2>
-                <ul>
-                    <li>Write a theory of induction as a systematic process for deriving scientific laws.</li>
-                    <li>Use this theory to overcome current physical conflicts and broaden understanding.</li>
-                    <li>Accelerate modern physics exploration through systematic thinking.</li>
-                </ul>
-            </div>
-            <img src="Welcome/Screenshot-2024-06-22-202801.png" alt="Project Image">
-        </div>
-    </div>
-
-    <!-- YouTube Section -->
-    <div class="section-tan">
-        <div class="section">
-            <img src="general/youtubelogo.png" alt="YouTube Thumbnail">
-            <div class="section-text">
-                <h2 class="section-title">Watch on YouTube!</h2>
-                <p>Subscribe to our YouTube channel to explore more about the Inductica Physics Project.</p>
-                <a href="https://www.youtube.com/@Inductica" class="cta-button">See More</a>
+                <p>{{Section Content}}</p> <!-- Replace {{Section Content}} -->
+                <a href="#" style="display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px;">{{Button Text}}</a>
             </div>
         </div>
     </div>
 
-    <!-- Blog Section -->
-    <div class="section-light">
-        <div class="section">
-            <div class="section-text">
-                <h2 class="section-title">Read More</h2>
-                <p>Visit our blog to stay updated on our latest written content!</p>
-                <a href="#" class="cta-button">Blog</a>
-            </div>
-            <img src="general/Xtwitter.jpg" alt="Blog Image">
-        </div>
-    </div>
-
-    <!-- Patreon Section -->
-    <div class="section-tan">
-        <div class="section">
-            <img src="general/patreonlogo.png" alt="Patreon Logo">
-            <div class="section-text">
-                <h2 class="section-title">Become a Patron!</h2>
-                <p>Support Inductica on Patreon! Members will receive exclusive access to extra content.</p>
-                <a href="#" class="cta-button">Patreon</a>
-            </div>
-        </div>
-    </div>
+    <!-- Placeholder Tan Section -->
+    <div class="section-placeholder">{{Placeholder Content}}</div>
 
     <!-- Footer -->
     <footer>
         <div class="footer-logo">
-            <img src="general/Logo-Transparent.png" alt="Inductica Logo">
+            <img src="{{Root Directory}}/general/Logo-Transparent.png" alt="Inductica Logo">
         </div>
         <p>&copy; 2024 Inductica. All Rights Reserved.</p>
     </footer>
+
 </body>
 </html>
