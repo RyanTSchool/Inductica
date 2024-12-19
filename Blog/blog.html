@@ -120,6 +120,30 @@
         .footer-logo img {
             max-width: 80px;
         }
+
+        /* Additional styling for blog post entries with images */
+        .blog-post {
+            overflow: auto;
+            margin-bottom: 30px;
+        }
+
+        .blog-post img {
+            max-width: 80px;
+            height: auto;
+        }
+
+        .blog-post a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .blog-post a h3 {
+            margin-top: 0;
+        }
+
+        .blog-post a p {
+            margin-bottom: 0;
+        }
     </style>
 </head>
 <body>
@@ -152,17 +176,37 @@
         <div class="blog-posts">
             <h2>Blog Posts</h2>
             <!-- Blog Post Entries -->
-            <h3>The Inductive Physics Project: Mission Statement</h3>
-            <p>By James &#x2022; November 28, 2023</p>
+            <div class="blog-post">
+                <a href="MissionStatement.html">
+                    <img src="Mission Statement.jpg" alt="Mission Statement" style="float:left; margin-right:10px;">
+                    <h3>The Inductive Physics Project: Mission Statement</h3>
+                    <p>By James &#x2022; November 28, 2023</p>
+                </a>
+            </div>
 
-            <h3>Initial Thoughts on "A Validation of Knowledge"</h3>
-            <p>By James &#x2022; May 15, 2023</p>
+            <div class="blog-post">
+                <a href="Validation.html">
+                    <img src="Validation.jpg" alt="A Validation of Knowledge" style="float:right; margin-left:10px;">
+                    <h3>Initial Thoughts on "A Validation of Knowledge"</h3>
+                    <p>By James &#x2022; May 15, 2023</p>
+                </a>
+            </div>
 
-            <h3>An Inductive Summary of Physics</h3>
-            <p>By James &#x2022; March 20, 2021</p>
+            <div class="blog-post">
+                <a href="InductiveSummary.html">
+                    <img src="objectivist.webp" alt="An Inductive Summary of Physics" style="float:left; margin-right:10px;">
+                    <h3>An Inductive Summary of Physics</h3>
+                    <p>By James &#x2022; March 20, 2021</p>
+                </a>
+            </div>
 
-            <h3>Mathematics Through Induction: a New Way to Conceptualize Math</h3>
-            <p>By James &#x2022; August 10, 2018</p>
+            <div class="blog-post">
+                <a href="MathInduction.html">
+                    <img src="MathInduction.png" alt="Mathematics Through Induction" style="float:right; margin-left:10px;">
+                    <h3>Mathematics Through Induction: a New Way to Conceptualize Math</h3>
+                    <p>By James &#x2022; August 10, 2018</p>
+                </a>
+            </div>
         </div>
     </div>
 
