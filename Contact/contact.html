@@ -129,6 +129,49 @@
             height: 400px;
         }
 
+        /* Contact Form Styles */
+        .contact-section {
+            background-color: #ffffff;
+            padding: 50px 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-section h2 {
+            text-align: center;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        .contact-section form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-section input,
+        .contact-section textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-section button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-section button:hover {
+            background-color: #45a049;
+        }
+
         /* Footer */
         footer {
             background-color: #4CAF50;
@@ -207,6 +250,18 @@
 
     <!-- Large Tan Placeholder Section -->
     <div class="section-placeholder"></div>
+
+    <!-- Contact Form Section -->
+    <div class="contact-section">
+        <h2>Contact Me</h2>
+        <!-- Replace the action URL with your Formspree endpoint after you sign up -->
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
 
     <!-- Footer -->
     <footer>
