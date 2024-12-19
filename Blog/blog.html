@@ -65,73 +65,48 @@
             margin: 0;
         }
 
-        /* Section Styles */
+        /* Blog Posts Section */
         .section-light {
             background-color: #f9f9f9;
             padding: 50px 20px;
         }
 
-        .section {
-            max-width: 1000px;
+        .blog-posts {
+            max-width: 800px;
             margin: 0 auto;
-            display: flex;
-            align-items: flex-start;
-            gap: 40px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
 
-        .section img {
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        .section-text {
-            flex: 1;
-            text-align: left;
-        }
-
-        .section-text p {
-            font-size: 1.2em;
-            line-height: 1.6;
-        }
-
-        h2.section-title, h3.section-subtitle {
+        .blog-posts h2 {
+            text-align: center;
             color: #4CAF50;
-            text-align: center;
-            font-size: 2em;
             margin-bottom: 20px;
-        }
-
-        .list-section ul {
-            list-style: none;
-            padding: 0;
-            text-align: center;
-            font-size: 1.2em;
-        }
-
-        .list-section ul li {
-            margin-bottom: 10px;
-        }
-
-        .client-image {
-            display: block;
-            margin: 20px auto;
-            width: 400px;
-            height: auto;
-            border-radius: 50%;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Placeholder Tan Section */
-        .section-placeholder {
-            background-color: #f0e8da;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             font-size: 2em;
-            color: #555;
+        }
+
+        .blog-posts h3 {
+            color: #333;
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .blog-posts p {
+            font-size: 1em;
+            color: #666;
+            margin: 5px 0 15px;
+        }
+
+        .blog-posts a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        .blog-posts a:hover {
+            text-decoration: underline;
         }
 
         /* Footer */
@@ -172,27 +147,29 @@
         </div>
     </header>
 
-    <!-- About Tutoring Section -->
+    <!-- Blog Posts Section -->
     <div class="section-light">
-        <h2 class="section-title">{{Section Title}}</h2> <!-- Replace {{Section Title}} -->
-        <div class="section">
-            <!-- Image Placeholder -->
-            <img src="../tutoring_placeholder.jpg" alt="Image Placeholder">
-            <!-- Section Information -->
-            <div class="section-text">
-                <p>{{Section Content}}</p> <!-- Replace {{Section Content}} -->
-                <a href="#" style="display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px;">{{Button Text}}</a>
-            </div>
+        <div class="blog-posts">
+            <h2>Blog Posts</h2>
+            <!-- Blog Post Entries -->
+            <h3>The Inductive Physics Project: Mission Statement</h3>
+            <p>By James &#x2022; November 28, 2023</p>
+
+            <h3>Initial Thoughts on "A Validation of Knowledge"</h3>
+            <p>By James &#x2022; May 15, 2023</p>
+
+            <h3>An Inductive Summary of Physics</h3>
+            <p>By James &#x2022; March 20, 2021</p>
+
+            <h3>Mathematics Through Induction: a New Way to Conceptualize Math</h3>
+            <p>By James &#x2022; August 10, 2018</p>
         </div>
     </div>
-
-    <!-- Placeholder Tan Section -->
-    <div class="section-placeholder">{{Placeholder Content}}</div>
 
     <!-- Footer -->
     <footer>
         <div class="footer-logo">
-         <img src="/general/Logo-Transparent.png" alt="Inductica 
+            <img src="/general/Logo-Transparent.png" alt="Inductica Logo">
         </div>
         <p>&copy; 2024 Inductica. All Rights Reserved.</p>
     </footer>
