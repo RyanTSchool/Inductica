@@ -112,13 +112,22 @@
         .list-section ul li {
             margin-bottom: 10px;
         }
-
-        .client-image {
+        .client-image1 {
             display: block;
             margin: 20px auto;
             width: 300px; /* Adjust size to your preference */
             height: 300px; /* Keeps the dimensions proportional */
-            border-radius: 25%; /* Reduced circular effect */
+            border-radius: 50%; /* Reduced circular effect */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            object-fit: cover; /* Ensures the image fills the container */
+        }
+
+        .client-image2 {
+            display: block;
+            margin: 20px auto;
+            width: 300px; /* Adjust size to your preference */
+            height: 300px; /* Keeps the dimensions proportional */
+            border-radius: 10%; /* Reduced circular effect */
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
             object-fit: cover; /* Ensures the image fills the container */
         }
@@ -208,7 +217,7 @@
         <h2 class="section-title">About Tutoring</h2>
         <div class="section">
             <!-- Tutor's Picture -->
-            <img src="tutoringjames.jpg" alt="James Picture">
+            <img src="tutoringjames.jpg" alt="James Picture"class=client-image1>
             <!-- Tutor Information -->
             <div class="section-text">
                 <p>
@@ -237,7 +246,7 @@
                 </ul>
             </div>
             <!-- Client Image -->
-            <img src="tutoringclient.png" alt="Client Picture" class="client-image">
+            <img src="tutoringclient.png" alt="Client Picture" class="client-image2">
         </div>
     </div>
 
