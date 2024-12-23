@@ -117,10 +117,11 @@
         .client-image {
             display: block;
             margin: 20px auto;
-            width: 400px;
-            height: auto;
-            border-radius: 50%;
+            width: 300px; /* Adjusted size to match circular shape */
+            height: 300px; /* Ensures a square image for proper circular cropping */
+            border-radius: 50%; /* Makes the image circular */
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            object-fit: cover; /* Ensures the image fills the circular frame */
         }
 
         /* Placeholder Tan Section (modified) */
@@ -187,19 +188,19 @@
             <a href="../index.html" class="logo">
                 <img src="../general/Logo-Transparent.png" alt="Inductica Logo">
             </a>
-<!-- Navigation Links -->
-<div style="display: flex; gap: 30px;">
-    <a href="../index.html" style="color: white; text-decoration: none; font-size: 1.5em; font-weight: bold;">Home</a>
-    <a href="../Projects/project.html" style="color: white; text-decoration: none; font-size: 1.5em; font-weight: bold;">Project</a>
-    <a href="Contact/contact.html" style="color: white; text-decoration: none; font-size: 1.5em; font-weight: bold;">Contact</a>
-    <a href="../Blog/blog.html" style="color: white; text-decoration: none; font-size: 1.5em; font-weight: bold;">Blog</a>
-</div>
+            <!-- Navigation Links -->
+            <div style="display: flex; gap: 30px;">
+                <a href="../index.html">Home</a>
+                <a href="../Projects/project.html">Project</a>
+                <a href="Contact/contact.html">Contact</a>
+                <a href="../Blog/blog.html">Blog</a>
+            </div>
         </nav>
 
         <!-- Centered Header Content -->
         <div>
             <h1>Tutoring Services</h1>
-            <p>I proved students with assistance in the pursuit of excellence in advanced mathematics and physics.</p>
+            <p>I provide students with assistance in the pursuit of excellence in advanced mathematics and physics.</p>
         </div>
     </header>
 
@@ -244,7 +245,6 @@
     <!-- Large Tan Placeholder Section with Contact Form -->
     <div class="section-placeholder">
         <h2>Contact Me</h2>
-        <!-- Replace YOUR_FORM_ID with the actual Formspree ID after signing up -->
         <form action="https://formspree.io/f/mldeqndy" method="POST" class="contact-form">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
