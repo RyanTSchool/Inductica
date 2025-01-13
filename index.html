@@ -20,18 +20,21 @@
             background: linear-gradient(135deg, #4CAF50 0%, #38a169 30%, #2a9d8f 60%, #3498db 100%);
             color: white;
             text-align: center;
-            height: 65vh;
+            height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            position: relative;
         }
         header h1 {
             margin: 0;
-            font-size: 3em;
+            font-size: 4em;
+            color: black;
         }
         header p {
             font-style: italic;
             margin: 10px 0;
+            font-size: 1.8em;
         }
         .icons {
             margin-top: 10px;
@@ -74,23 +77,6 @@
             color: #333;
             font-size: 1.8em;
             margin-bottom: 10px;
-        }
-        .mission-text h3 {
-            font-size: 1.5em;
-            margin: 10px 0;
-            font-weight: bold;
-        }
-        .mission-text p, .mission-text ul {
-            line-height: 1.6;
-            margin-bottom: 15px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        .embed-container {
-            background-color: #fff;
-            padding: 50px 20px;
-            text-align: center;
         }
         .embed-container-flex {
             display: flex;
@@ -145,7 +131,7 @@
 <body>
 
 <!-- Header -->
-<header style="position: relative; height: 100vh;">
+<header>
     <!-- Top Navigation Bar -->
     <nav style="position: absolute; top: 20px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 50px;">
         <!-- Navigation Links -->
@@ -160,10 +146,16 @@
     <!-- Centered Content -->
     <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
         <img src="general/Logo-Transparent.png" alt="Inductica Logo" style="width: 300px; height: auto; margin-bottom: 20px;">
-        <h1 style="font-size: 4em; margin: 0; color: black; font-family: 'AmericanTypewriter', serif;">Inductica</h1>
-        <p style="font-size: 1.8em; font-style: italic; color: white; margin-top: 10px;">
-            "To stand on the shoulders of giants, you must make the climb, earning every handhold yourself."
-        </p>
+        <h1>Inductica</h1>
+        <p>"To stand on the shoulders of giants, you must make the climb, earning every handhold yourself."</p>
+        <!-- Social Media Icons -->
+        <div class="icons" style="margin-top: 20px;">
+            <a href="#"><img src="general/discordlogo.png" alt="Discord" style="width: 60px; height: 60px; margin: 0 10px;"></a>
+            <a href="https://www.facebook.com/inductica"><img src="general/facebooklogo2.png" alt="Facebook" style="width: 60px; height: 60px; margin: 0 10px;"></a>
+            <a href="https://www.patreon.com/inductica"><img src="general/patreonlogo2.png" alt="Patreon" style="width: 60px; height: 60px; margin: 0 10px;"></a>
+            <a href="https://www.youtube.com/@inductica"><img src="general/youtubelogo2.png" alt="YouTube" style="width: 60px; height: 60px; margin: 0 10px;"></a>
+            <a href="https://x.com/inductica"><img src="general/Twitter-X-Logo-PNG-1.png" alt="Twitter" style="width: 60px; height: 60px; margin: 0 10px;"></a>
+        </div>
     </div>
 </header>
 
@@ -207,5 +199,6 @@
     </div>
     <p>&copy; 2024 Inductica. All Rights Reserved.</p>
 </footer>
+
 </body>
 </html>
