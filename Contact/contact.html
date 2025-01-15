@@ -38,14 +38,14 @@
         }
 
         nav .logo img {
-            width: 120px; /* Larger logo */
+            width: 120px;
             height: auto;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            font-size: 1.5em; /* Larger navigation text */
+            font-size: 1.5em;
             font-weight: bold;
             margin: 0 15px;
         }
@@ -81,8 +81,10 @@
 
         .section img {
             width: 300px;
-            height: 300px;
-            object-fit: cover;
+            height: auto;
+            object-fit: contain; /* Ensures full image is visible */
+            border-radius: 3%; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
 
         .section-text {
@@ -112,27 +114,8 @@
         .list-section ul li {
             margin-bottom: 10px;
         }
-        .client-image1 {
-            display: block;
-            margin: 20px auto;
-            width: 360px; /* Adjust size to your preference */
-            height: 300px; /* Keeps the dimensions proportional */
-            border-radius: 50%; /* Reduced circular effect */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-            object-fit: cover; /* Ensures the image fills the container */
-        }
 
-    .client-image2 {
-        display: block;
-        margin: 20px auto;
-        max-width: 100%; /* Prevents overflow */
-        height: auto; /* Maintains aspect ratio */
-        border-radius: 3%; 
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    }
-
-
-        /* Placeholder Tan Section (modified) */
+        /* Placeholder Tan Section */
         .section-placeholder {
             background-color: #f0e8da;
             padding: 50px 20px;
@@ -175,14 +158,14 @@
 
         /* Footer */
         footer {
-    background: linear-gradient(135deg, #4CAF50 0%, #38a169 30%, #2a9d8f 60%, #3498db 100%);
-    color: white;
-    text-align: center;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
+            background: linear-gradient(135deg, #4CAF50 0%, #38a169 30%, #2a9d8f 60%, #3498db 100%);
+            color: white;
+            text-align: center;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
         }
 
         .footer-logo img {
@@ -194,13 +177,10 @@
 
     <!-- Header -->
     <header>
-        <!-- Top Navigation Bar -->
         <nav>
-            <!-- Logo -->
             <a href="../index.html" class="logo">
                 <img src="../general/Logo-Transparent.png" alt="Inductica Logo">
             </a>
-            <!-- Navigation Links -->
             <div style="display: flex; gap: 30px;">
                 <a href="../index.html">Home</a>
                 <a href="../Projects/project.html">Projects</a>
@@ -208,8 +188,6 @@
                 <a href="../Blog/blog.html">Blog</a>
             </div>
         </nav>
-
-        <!-- Centered Header Content -->
         <div>
             <h1>Tutoring Services</h1>
             <p>I provide students with assistance in the pursuit of excellence in advanced mathematics and physics.</p>
@@ -220,9 +198,7 @@
     <div class="section-light">
         <h2 class="section-title">About Tutoring</h2>
         <div class="section">
-            <!-- Tutor's Picture -->
-            <img src="tutoringjames.jpg" alt="James Picture"class=client-image1>
-            <!-- Tutor Information -->
+            <img src="tutoringjames.jpg" alt="James Picture">
             <div class="section-text">
                 <p>
                     I tutor upper-level undergraduate math and physics subjects both online and in person at a rate of <strong>$68/hr</strong>. Visit my tutoring profile to see reviews from happy customers from my 16 years of tutoring experience.
@@ -236,7 +212,6 @@
     <div class="section-light">
         <h3 class="section-subtitle">List of Subjects Covered</h3>
         <div class="section">
-            <!-- Subjects List -->
             <div class="list-section">
                 <ul>
                     <li>1. Calculus 3</li>
@@ -249,12 +224,11 @@
                     <li>8. Quantum Mechanics</li>
                 </ul>
             </div>
-            <!-- Client Image -->
-            <img src="tutoringclient.png" alt="Client Picture" class="client-image2">
+            <img src="tutoringclient.png" alt="Client Picture">
         </div>
     </div>
 
-    <!-- Large Tan Placeholder Section with Contact Form -->
+    <!-- Contact Form Section -->
     <div class="section-placeholder">
         <h2>Contact Me</h2>
         <form action="https://formspree.io/f/mldeqndy" method="POST" class="contact-form">
