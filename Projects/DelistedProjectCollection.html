@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        @font-face {
+            font-family: 'AmericanTypewriter';
+            src: url('../font/American Typewriter Medium BT.ttf') format('ttf');
+        }
+                body {
+            font-family: 'AmericanTypewriter', serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #fff;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, #4CAF50 0%, #38a169 30%, #2a9d8f 60%, #3498db 100%);
+            color: white;
+            text-align: center;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+
+        /* Navigation Bar */
+        nav {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 50px;
+            box-sizing: border-box;
+        }
+
+        nav .logo img {
+            width: 120px; /* started at 80px*/
+            height: auto;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header Content */
+        header h1 {
+            font-size: 2.5em;
+            margin: 20px 0;
+        }
+
+        header p {
+            font-size: 1.3em;
+            margin: 0;
+        }
+
+        /* Projects Section */
+        .section-light {
+            background-color: #f9f9f9;
+            padding: 50px 20px;
+        }
+
+        .project-posts {
+            max-width: 1360px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .project-posts h2 {
+            text-align: center;
+            color: #4CAF50;
+            margin-bottom: 20px;
+            font-size: 3.4em;
+        }
+
+        .project-post {
+            overflow: auto;
+            margin-bottom: 30px;
+        }
+
+        .project-post img {
+            max-width: 360px; /* two images change */
+            height: auto;
+        }
+
+        .project-post a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .project-post a h3 {
+            margin-top: 0;
+        }
+
+        .project-post a p {
+            margin-bottom: 0;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid lightblue;
+            margin: 30px 0;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #4CAF50 0%, #38a169 30%, #2a9d8f 60%, #3498db 100%);
+            color: white;
+            text-align: center;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+
+        .footer-logo img {
+            max-width: 80px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <!-- Top Navigation Bar -->
+        <nav>
+            <!-- Logo -->
+            <a href="../index.html" class="logo">
+                <img src="../general/Logo-Transparent.png" alt="Inductica Logo">
+            </a>
+<!-- Navigation Links -->
+<div style="display: flex; gap: 30px;">
+    <a href="../index.html" style="color: white; text-decoration: none; font-size: 1.5em; font-weight: bold;">Home</a>
+    <a href="../Projects/project.html" style="color: white; text-decoration: none; font-size: 1.5em; font-weight: bold;">Projects</a>
+    <a href="../Contact/contact.html" style="color: white; text-decoration: none; font-size: 1.5em; font-weight: bold;">Contact/Tutoring</a>
+    <a href="../Blog/blog.html" style="color: white; text-decoration: none; font-size: 1.5em; font-weight: bold;">Blog</a>
+</div>
+        </nav>
+
+        <!-- Centered Header Content cleint HATED THIS FUCKING SHIT!! -->
+        <div>
+            <h1>Projects</h1>  
+            <p></p>
+        </div>
+    </header>
+
+    <hr>
+
+<!-- Project Posts Section -->
+<div class="section-light">
+    <div class="project-posts">
+        <h2></h2> <!-- got rid of the as it's the second part-->
+        <!-- Project Entries -->
+        <div class="project-post">
+            <img src="Wright_of_Derby,_The_Orrery.jpg" alt="Placeholder for Project 1">
+            <a href="theoryofInduction.html">
+                <h3>Theory of Induction</h3>
+                <p>To start physics afresh and revise the flawed theories of quantum mechanics and relativity, we will need a theory of how to prove scientific conclusions from observation.</p>
+                <p>By James &#x2022; May 23, 2025</p>
+            </a>
+        </div>
+        <hr>
+        <div class="project-post">
+            <img src="mathinduc3.jpg" alt="Placeholder for Project 2">
+            <a href="M&P.html">
+                <h3>Inductive Proof of Math and Physics</h3>
+                <p>In this revolutionary YouTube Lecture series, Inductica presents a progression of observations and reasoning steps which could have proven the essentials of math and physics.</p>
+                <p>By James &#x2022; December 20, 2024</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">
+            <img src="../general/Logo-Transparent.png" alt="Inductica Logo">
+        </div>
+        <p>&copy; 2024 Inductica. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
