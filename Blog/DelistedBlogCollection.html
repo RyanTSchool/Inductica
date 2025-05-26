@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title> <!-- Replace {{Page Title}}with your page's title -->
+    <style>
+        @font-face {
+            font-family: 'AmericanTypewriter';
+            src: url('../font/American Typewriter Medium BT.ttf') format('ttf');
+        }
+                body {
+            font-family: 'AmericanTypewriter', serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #fff;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, #4CAF50 0%, #38a169 30%, #2a9d8f 60%, #3498db 100%);
+            color: white;
+            text-align: center;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+
+        /* Navigation Bar */
+        nav {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 50px;
+            box-sizing: border-box;
+        }
+
+        nav .logo img {
+            width: 120px; /* Larger logo */
+            height: auto;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em; /* Larger navigation text */
+            font-weight: bold;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header Content */
+        header h1 {
+            font-size: 2.5em;
+            margin: 20px 0;
+        }
+
+        header p {
+            font-size: 1.3em;
+            margin: 0;
+        }
+
+        /* Blog Posts Section */
+        .section-light {
+            background-color: #f9f9f9;
+            padding: 50px 20px;
+        }
+
+        .blog-posts {
+            max-width: 1360px; /* Increased by ~70% from 800px */
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .blog-posts h2 {
+            text-align: center;
+            color: #4CAF50;
+            margin-bottom: 20px;
+            font-size: 3.4em; /* Increased by ~70% from 2em */
+        }
+
+        .blog-posts h3 {
+            color: #333;
+            font-size: 2.5em; /* Increased by ~70% from 1.5em */
+            margin: 10px 0;
+        }
+
+        .blog-posts p {
+            font-size: 1.7em; /* Increased by ~70% from 1em */
+            color: #666;
+            margin: 5px 0 15px;
+        }
+
+        .blog-posts a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        .blog-posts a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+    background: linear-gradient(135deg, #4CAF50 0%, #38a169 30%, #2a9d8f 60%, #3498db 100%);
+    color: white;
+    text-align: center;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+        }
+
+        .footer-logo img {
+            max-width: 80px;
+        }
+
+        /* Additional styling for blog post entries with images */
+        .blog-post {
+            overflow: auto;
+            margin-bottom: 30px;
+        }
+
+        .blog-post img {
+            max-width: 136px; /* Increased by ~70% from 80px */
+            height: auto;
+        }
+
+        .blog-post a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .blog-post a h3 {
+            margin-top: 0;
+        }
+
+        .blog-post a p {
+            margin-bottom: 0;
+        }
+
+        /* Thin light blue dividing lines */
+        hr {
+            border: none;
+            border-top: 1px solid lightblue;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <!-- Top Navigation Bar -->
+        <nav>
+            <!-- Logo -->
+            <a href="../index.html" class="logo">
+                <img src="../general/Logo-Transparent.png" alt="Inductica Logo">
+            </a>
+<!-- Navigation Links -->
+<div style="display: flex; gap: 30px;">
+    <a href="../index.html" style="color: white; text-decoration: none; font-size: 1.5em; font-weight: bold;">Home</a>
+    <a href="../Projects/project.html" style="color: white; text-decoration: none; font-size: 1.5em; font-weight: bold;">Projects</a>
+    <a href="../Contact/contact.html" style="color: white; text-decoration: none; font-size: 1.5em; font-weight: bold;">Contact/Tutoring</a>
+    <a href="#" style="color: white; text-decoration: none; font-size: 1.5em; font-weight: bold;">Blog</a>
+</div>
+        </nav>
+
+        <!-- Centered Header Content -->
+        <div>
+            <h1>Blogs</h1> <!--Title -->
+            <p></p> <!-- Subtitle -->
+        </div>
+    </header>
+
+    <hr>
+
+    <!-- Blog Posts Section -->
+    <div class="section-light">
+        <div class="blog-posts">
+            <h2>Blog Posts</h2>
+            <!-- Blog Post Entries -->
+         <!--   <div class="blog-post">
+                <a href="MissionStatement.html">
+                    <img src="Mission Statement.jpg" alt="Mission Statement" style="float:left; margin-right:10px;">
+                    <h3>The Inductive Physics Project: Mission Statement</h3>
+                    <p>By James &#x2022; November 28, 2023</p>
+                </a>
+            </div> -->
+            <hr>
+            <div class="blog-post">
+                <a href="Validation.html">
+                    <img src="Validation.jpg" alt="A Validation of Knowledge" style="float:right; margin-left:10px;">
+                    <h3>Initial Thoughts on "A Validation of Knowledge"</h3>
+                    <p>By James &#x2022; May 15, 2023</p>
+                </a>
+            </div>
+            <hr>
+            <div class="blog-post">
+                <a href="InductiveSummary.html">
+                    <img src="InductSum.png" alt="An Inductive Summary of Physics" style="float:left; margin-right:10px;">
+                    <h3>An Inductive Summary of Physics</h3>
+                    <p>By James &#x2022; March 20, 2021</p>
+                </a>
+            </div>
+     <!--       <hr>
+            <div class="blog-post">
+                <a href="MathInduction.html">
+                    <img src="MathInduction.png" alt="Mathematics Through Induction" style="float:right; margin-left:10px;">
+                    <h3>Mathematics Through Induction: a New Way to Conceptualize Math</h3>
+                    <p>By James &#x2022; August 10, 2018</p>
+                </a>
+            </div>  -->
+        </div>
+    </div>
+
+    <hr> 
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">
+            <img src="../general/Logo-Transparent.png" alt="Inductica Logo">
+        </div>
+        <p>&copy; 2024 Inductica. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
