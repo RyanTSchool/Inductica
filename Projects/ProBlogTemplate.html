@@ -51,13 +51,23 @@
         nav a:hover {
             text-decoration: underline;
         }
-        .logo-banner {
-            text-align: center;
-            margin: 20px 0;
+        .banner {
+            width: 100%;
+            background: linear-gradient(135deg, #4CAF50 0%, #38a169 30%, #2a9d8f 60%, #3498db 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 0;
         }
         .logo-banner img {
             max-width: 200px;
             height: auto;
+        }
+        .site-name {
+            font-family: 'AmericanTypewriter', serif;
+            color: #333;
+            margin-top: 10px;
+            font-size: 1.5em;
         }
         .blog-container {
             max-width: 1000px;
@@ -121,9 +131,11 @@
         </div>
     </header>
 
-    <!-- Main Logo Banner at Top -->
-    <div class="logo-banner">
-        <img src="{{ logo_banner_path | default: '../general/Logo-Transparent.png' }}" alt="{{ site_name }} Logo">
+    <div class="banner">
+        <div class="logo-banner">
+            <img src="../general/Logo-Transparent.png" alt="Inductica Logo">
+            <p class="site-name">{{ site_name }}</p>
+        </div>
     </div>
 
     <div class="blog-container">
