@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="{{ language | default: 'en' }}">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ site_name }} - {{ page_title }}</title>
+    <title>Theory of Induction</title>
     <style>
         @font-face {
             font-family: 'AmericanTypewriter';
-            src: url('{{ font_path }}/AmericanTypewriterMediumBT.ttf') format('truetype');
+            src: url('../font/American Typewriter Medium BT.ttf') format('ttf');
         }
         body {
             font-family: 'AmericanTypewriter', serif;
@@ -16,17 +16,18 @@
             color: #333;
             background-color: #fff;
         }
-        header, footer {
+        /* Header Section */
+        header {
             background: linear-gradient(135deg, #4CAF50 0%, #38a169 30%, #2a9d8f 60%, #3498db 100%);
             color: white;
             text-align: center;
+            height: 250px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             position: relative;
-            height: 250px;
-            margin: 0;
         }
+        /* Navigation Bar */
         nav {
             position: absolute;
             top: 0;
@@ -51,24 +52,15 @@
         nav a:hover {
             text-decoration: underline;
         }
-        .banner {
-            width: 100%;
-            background: linear-gradient(135deg, #4CAF50 0%, #38a169 30%, #2a9d8f 60%, #3498db 100%);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 30px 0;
+        header h1 {
+            font-size: 2.5em;
+            margin: 20px 0;
         }
-        .logo-banner img {
-            max-width: 200px;
-            height: auto;
+        header p {
+            font-size: 1.3em;
+            margin: 0;
         }
-        .site-name {
-            font-family: 'AmericanTypewriter', serif;
-            color: #333;
-            margin-top: 10px;
-            font-size: 1.5em;
-        }
+        /* Blog Post Section */
         .blog-container {
             max-width: 1000px;
             margin: 40px auto;
@@ -79,7 +71,7 @@
             width: 100%;
             height: auto;
             display: block;
-            margin: 0 auto 30px;
+            margin: 0 auto 30px auto;
             border-radius: 5px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
@@ -110,9 +102,25 @@
             font-size: 1.2em;
             line-height: 1.8;
         }
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #4CAF50 0%, #38a169 30%, #2a9d8f 60%, #3498db 100%);
+            color: white;
+            text-align: center;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+        .footer-logo img {
+            max-width: 80px;
+        }
     </style>
 </head>
 <body>
+
+    <!-- Header -->
     <header>
         <nav>
             <a href="../index.html" class="logo">
@@ -126,57 +134,67 @@
             </div>
         </nav>
         <div>
-            <h1>{{ site_name }}</h1>
-            <p>{{ tagline }}</p>
+            <h1>EX Header 1</h1>
+            <p></p>
         </div>
     </header>
 
-    <div class="banner">
-        <div class="logo-banner">
-            <img src="../general/Logo-Transparent.png" alt="Inductica Logo">
-            <p class="site-name">{{ site_name }}</p>
-        </div>
-    </div>
-
+    <!-- Blog Content Section -->
     <div class="blog-container">
-        {% if featured_image %}
-            <img src="{{ featured_image.src }}" alt="{{ featured_image.alt }}" class="featured-image">
-        {% endif %}
-        <h2 class="blog-title">{{ page_title }}</h2>
+        <img src="ToI.jpg" alt="Featured Image" class="featured-image">
+        <h2 class="blog-title">EX Header 1</h2>
         <div class="blog-meta">
-            <span>By James</span>
-            <span>{{ date }}</span>
-            <span>{{ time }}</span>
+            <span>By James Ellias</span>
+            <span>2025-05-23</span>
+            <span>16:00</span>
         </div>
         <div class="blog-content">
-            <h3 class="mini-header">Example Header 1: Introduction Example</h3>
-            <p>EX: This is an example paragraph for the introduction, illustrating how the first section might read when populated with real content.</p>
-
-            <h3 class="mini-header">Example Header 2: Background Example</h3>
-            <p>EX: This example paragraph provides background information, demonstrating the narrative flow in a typical article.</p>
-
-            <h3 class="mini-header">Example Header 3: Methodology Example</h3>
-            <p>EX: Here is an example paragraph outlining the methodology, showcasing how detailed explanations can be structured.</p>
-
-            <h3 class="mini-header">Example Header 4: Results Example</h3>
-            <p>EX: This example paragraph presents hypothetical results, offering a template for discussing findings in a clear manner.</p>
-
-            <h3 class="mini-header">Example Header 5: Discussion Example</h3>
-            <p>EX: This discussion example highlights how to interpret the results and connect them back to broader concepts.</p>
-
-            <h3 class="mini-header">Example Header 6: Conclusion Example</h3>
-            <p>EX: The conclusion example wraps up the narrative, summarizing key takeaways and suggesting future directions.</p>
-
-            <h3 class="mini-header">Example Header 7: Further Reading Example</h3>
-            <p>EX: This example paragraph points readers toward additional resources and further reading, ensuring they can explore the topic in depth.</p>
+            <!-- Section 1 -->
+            <h3 class="mini-header">EX Header 1</h3>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> word and an <i>example italic</i> word in the same paragraph.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> word and an <i>example italic</i> word.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> word and an <i>example italic</i>.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
+            <!-- Section 2 -->
+            <h3 class="mini-header">EX Header 2</h3>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> word and an <i>example italic</i>.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> word and an <i>example italic</i>.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> word and an <i>example italic</i>.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> word and an <i>example italic</i>.</p>
+            <!-- Section 3 -->
+            <h3 class="mini-header">EX Header 3</h3>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
+            <!-- Section 4 -->
+            <h3 class="mini-header">EX Header 4</h3>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
+            <!-- Section 5 -->
+            <h3 class="mini-header">EX Header 5</h3>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
+            <!-- Section 6 -->
+            <h3 class="mini-header">EX Header 6</h3>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
         </div>
     </div>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-logo">
             <img src="../general/Logo-Transparent.png" alt="Inductica Logo">
         </div>
-        <p>&copy; {{ current_year }} {{ site_name }}. All Rights Reserved.</p>
+        <p>&copy; 2024 Inductica. All Rights Reserved.</p>
     </footer>
+
 </body>
 </html>
