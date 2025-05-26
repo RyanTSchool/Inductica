@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theory of Induction</title>
+    <style>
+        @font-face {
+            font-family: 'AmericanTypewriter';
+            src: url('../font/American Typewriter Medium BT.ttf') format('ttf');
+        }
+        body {
+            font-family: 'AmericanTypewriter', serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #fff;
+        }
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, #4CAF50 0%, #38a169 30%, #2a9d8f 60%, #3498db 100%);
+            color: white;
+            text-align: center;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+        /* Navigation Bar */
+        nav {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 50px;
+            box-sizing: border-box;
+        }
+        nav .logo img {
+            width: 80px;
+            height: auto;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 20px 0;
+        }
+        header p {
+            font-size: 1.3em;
+            margin: 0;
+        }
+        /* Blog Post Section */
+        .blog-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f0e8da;
+        }
+        .featured-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 30px auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .blog-title {
+            color: #2a9d8f;
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .blog-meta {
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .blog-meta span {
+            margin: 0 10px;
+        }
+        .mini-header {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 0.25rem;
+        }
+        .blog-content {
+            font-size: 1.2em;
+            line-height: 1.8;
+        }
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #4CAF50 0%, #38a169 30%, #2a9d8f 60%, #3498db 100%);
+            color: white;
+            text-align: center;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+        .footer-logo img {
+            max-width: 80px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">
+                <img src="../general/Logo-Transparent.png" alt="Inductica Logo">
+            </a>
+            <div style="display: flex; gap: 30px;">
+                <a href="../index.html">Home</a>
+                <a href="project.html">Project</a>
+                <a href="../Contact/contact.html">Contact/Tutoring</a>
+                <a href="../Blog/blog.html">Blog</a>
+            </div>
+        </nav>
+        <div>
+            <h1>EX Header 1</h1>
+            <p></p>
+        </div>
+    </header>
+
+    <!-- Blog Content Section -->
+    <div class="blog-container">
+        <img src="ToI.jpg" alt="Featured Image" class="featured-image">
+        <h2 class="blog-title">EX Header 1</h2>
+        <div class="blog-meta">
+            <span>By James Ellias</span>
+            <span>Date</span>
+            <span>Time</span>
+        </div>
+        <div class="blog-content">
+            <!-- Section 1 -->
+            <h3 class="mini-header">EX Header 1</h3>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> word and an <i>example italic</i> word in the same paragraph.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> word and an <i>example italic</i> word.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> word and an <i>example italic</i>.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
+            <!-- Section 2 -->
+            <h3 class="mini-header">EX Header 2</h3>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> word and an <i>example italic</i>.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> word and an <i>example italic</i>.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> word and an <i>example italic</i>.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> word and an <i>example italic</i>.</p>
+            <!-- Section 3 -->
+            <h3 class="mini-header">EX Header 3</h3>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
+            <!-- Section 4 -->
+            <h3 class="mini-header">EX Header 4</h3>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
+            <!-- Section 5 -->
+            <h3 class="mini-header">EX Header 5</h3>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
+            <!-- Section 6 -->
+            <h3 class="mini-header">EX Header 6</h3>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
+            <p>Paragraph EX <a href="https://google.com" target="_blank">Example link</a>. This is an <b>example bold</b> and <i>example italic</i>.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">
+            <img src="../general/Logo-Transparent.png" alt="Inductica Logo">
+        </div>
+        <p>&copy; 2024 Inductica. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
