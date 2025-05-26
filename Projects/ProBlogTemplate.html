@@ -51,6 +51,14 @@
         nav a:hover {
             text-decoration: underline;
         }
+        .logo-banner {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .logo-banner img {
+            max-width: 200px;
+            height: auto;
+        }
         .blog-container {
             max-width: 1000px;
             margin: 40px auto;
@@ -113,6 +121,11 @@
         </div>
     </header>
 
+    <!-- Main Logo Banner at Top -->
+    <div class="logo-banner">
+        <img src="{{ logo_banner_path | default: '../general/Logo-Transparent.png' }}" alt="{{ site_name }} Logo">
+    </div>
+
     <div class="blog-container">
         {% if featured_image %}
             <img src="{{ featured_image.src }}" alt="{{ featured_image.alt }}" class="featured-image">
@@ -147,7 +160,7 @@
         </div>
     </div>
 
-        <footer>
+    <footer>
         <div class="footer-logo">
             <img src="../general/Logo-Transparent.png" alt="Inductica Logo">
         </div>
