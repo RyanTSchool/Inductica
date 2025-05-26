@@ -97,13 +97,14 @@
 <body>
     <header>
         <nav>
-            <a href="{{ base_url }}" class="logo">
-                <img src="{{ logo_path }}" alt="{{ site_name }} Logo">
+            <a href="../index.html" class="logo">
+                <img src="../general/Logo-Transparent.png" alt="Inductica Logo">
             </a>
             <div style="display: flex; gap: 30px;">
-                {% for item in nav_items %}
-                    <a href="{{ item.href }}">{{ item.label }}</a>
-                {% endfor %}
+                <a href="../index.html">Home</a>
+                <a href="project.html">Project</a>
+                <a href="../Contact/contact.html">Contact/Tutoring</a>
+                <a href="../Blog/blog.html">Blog</a>
             </div>
         </nav>
         <div>
@@ -118,18 +119,37 @@
         {% endif %}
         <h2 class="blog-title">{{ page_title }}</h2>
         <div class="blog-meta">
-            <span>By {{ author }}</span>
+            <span>By James</span>
             <span>{{ date }}</span>
             <span>{{ time }}</span>
         </div>
         <div class="blog-content">
-            {{ content | safe }}
+            <h3 class="mini-header">Example Header 1: Introduction Example</h3>
+            <p>EX: This is an example paragraph for the introduction, illustrating how the first section might read when <i>populated with real</i> content.</p>
+
+            <h3 class="mini-header">Example Header 2: Background Example</h3>
+            <p>EX: This example paragraph provides background information, demonstrating the narrative <b>flow in a typical article. </b></p>
+
+            <h3 class="mini-header">Example Header 3: Methodology Example</h3>
+            <p>EX: Here is an example paragraph outlining the methodology, showcasing how detailed explanations can be structured.</p>
+
+            <h3 class="mini-header">Example Header 4: Results Example</h3>
+            <p>EX: This example paragraph presents hypothetical results, offering a template for discussing findings in a clear manner.</p>
+
+            <h3 class="mini-header">Example Header 5: Discussion Example</h3>
+            <p>EX: This discussion example highlights how to interpret the results and connect them back to broader concepts.</p>
+
+            <h3 class="mini-header">Example Header 6: Conclusion Example</h3>
+            <p>EX: The conclusion example wraps up the narrative, summarizing key takeaways and suggesting future directions.</p>
+
+            <h3 class="mini-header">Example Header 7: Further Reading Example</h3>
+            <p>EX: This example paragraph points readers toward additional resources and further reading, ensuring they can explore the topic in depth.</p>
         </div>
     </div>
 
     <footer>
-        <a href="{{ base_url }}">
-            <img src="{{ logo_path }}" alt="{{ site_name }} Logo">
+        <a href="../index.html">
+            <img src="../general/Logo-Transparent.png" alt="Inductica Logo">
         </a>
         <p>&copy; {{ current_year }} {{ site_name }}. All Rights Reserved.</p>
     </footer>
